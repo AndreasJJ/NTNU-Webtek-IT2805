@@ -1,7 +1,13 @@
-body{
-    font-family: helvetica, sans-serif;
+html{
+    background-color: #e9e9e9;
+}
+#contents{
     width: 55%;
     margin: auto;
+    border-radius: 30px;
+    background: #f9f9f9;
+    padding: 40px;
+    margin-top: 50px;
 }
 .content-box{
     margin-top: 50px;
@@ -9,6 +15,10 @@ body{
 h1{
     text-align: center;
     margin-bottom: 50px;
+    color: #f9f9f9;
+    font-size: 60px;
+    margin-top: 0px;
+    padding: 50px;
 }
 h3{
     font-size: 1.1em;
@@ -18,4 +28,14 @@ p{
 }
 li{
     margin-top: 20px;
+}
+header{
+    width: 100%;
+    height: 200px;
+    background-color: #e9a301;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: helvetica, sans-serif;
 }
