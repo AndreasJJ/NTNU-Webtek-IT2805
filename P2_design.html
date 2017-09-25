@@ -9,6 +9,7 @@
 	<body>
         <h1>Project Design</h1>
         <h3>Ole Fredrik Borgundvåg Berg, Olav Håberg Dimmen, Kasper Maagerø Svendsen, Andreas Jensen Jonassen and Liam Svanåsbakken Crouch</h3>
+        <h3>25.09.2017</h3>
         <h2>Administrative Details</h2>
         <p>Our client is named Ragnhild Kristensen, and is the chief of communication at Studentpartiet. She is also a public communication student at NTNU.</p>
         <h2>Purpose</h2>
@@ -20,28 +21,56 @@
         <h2>Navigation</h2>
         <p>Navigation will primarily be through the navigation bar.</p>
         <p>The navigation bar is going to link to:</p>
+        <ul>
+            <li>
+                <h3>The frontpage:</h3>
+                <p>Because it is important that the user may go back to the front page, in case they feel like they are lost.</p>
+            </li>
+            <li>
+                <h3>The about site:</h3>
+                <p>Because it is important that users find information about the party.</p>
+                <p>This site is going to link to the contact page and the history page of the site, as these pages give more detailed information about Studentpartiet.</p>
+            </li>
+            <li>
+                <h3>The political program:</h3>
+                <p>Because Studentpartiet is a political party, and then .</p>
+            </li>
+            <li>
+                <h3>The frontpage:</h3>
+                <p>Because it is important that the user may go back to the front page, in case they feel like they are lost.</p>
+            </li>
+        </ul>
         <h2>File structure</h2>
         <img src="img/struktur.PNG"/>
         <img src="img/struktur2.PNG"/>
         <h2>Page Layout</h2>
         <ul>
             <li>
+                <h3>Stylesheet use:</h3>
+                <p>The site is going to have a main CSS file, called main.css, that includes the theme of the site. Each of the pages is going to have their own CSS-file as well.</p>
+            </li>
+            <li>
                 <h3>Color scheme:</h3>
                 <p>The background color of the page is very light gray, because it is important that the background doesn't steal to much of the audience's attention.</p>
                 <p>The standard font color is going to be dark gray. It's not quite black and white, because we wish to reduce contrast, so that you wouldn't be weary of reading. By going standard black and white, the design won't steal people's attention, and it gives a modern minimalistic appearance.</p>
-                <p>The navigation bar, buttons and icons will be in orange, because that is Studentpartiets political color, and the page will remind people of them.</p>
+                <p>The navigation bar, buttons and icons will be in <span id="orange">orange</span> (#e9a301), because that is Studentpartiet's political color, and the page will remind people of them.</p>
             </li>
         
             <li>
+                <h3>Font:</h3>
+                <p>The primary font of the site is going to be Verdana.</p>
+                <p>The standard font size will be 12px.</p>
+            </li>
+            <li>
                 <h3>Navigation bar:</h3>
                 <p>The navigation bar is going to be at the top of the page, and link to the most important pages of the site.</p>
-                <p>The font color of the navigation bar will be orange, to as that is Studentpartiet's political color.</p>
-                <p>The navigation bar is going to consist of links in orange staying on an horizontal line when the user is on desktop, and when on mobile the navigation bar will be a yellow button you can press, and the menu will appear vertically below it.</p>
+                <p>The background color of the navigation bar will be orange, to as that is Studentpartiet's political color.</p>
+                <p>The navigation bar is going to consist of links in light gray staying on an horizontal line when the user is on desktop, and when on mobile the navigation bar will be a button you can press, and the menu will appear vertically below it.</p>
             </li>
             <li>
                 <h3>Footer:</h3>
                 <p>The footer is going to be on the bottom of every page, and have some contact info and link to social media.</p>
-                <p>The font color of the navigation bar will be orange, to as that is Studentpartiet's political color.</p>
+                <p>The background color of the footer is going to be dark gray .</p>
                 <p>The navigation bar is going to consist of links in orange staying on an horizontal line when the user is on desktop, and when on mobile the navigation bar will be a yellow button you can press, and the menu will appear vertically below it.</p>
             </li>
         </ul>
@@ -52,7 +81,7 @@
                 <p>The page should contain a summary of the party's main political objectives and a photo gallery of smiling humans.</p>
                 <p>The summary of the main political objective is supposed to give visitors an intuition of what the party's political stances.</p>
                 <p>This page is index.html, and will use main.css and index.css for styling and galleri.js as picture gallery. The pictures are bilde1.jpg and so on. The reason we use jpg is that it is the best format when having photos, because this have better color depth and thus represent the color on the photo better.</p>
-                <p>This page will also have a summary of Studentpartiet's main political objectives. They are going to be located beneath the photo gallery, so that visitors don't get overwhelmed by text. Each objective is going to be in a div with an orange backgrond-color.</p>
+                <p>This page will also have a summary of Studentpartiet's main political objectives. They are going to be located beneath the photo gallery, so that visitors don't get overwhelmed by text. Each objective is going to be in a div with an orange background-color.</p>
                 <p>The photos of smiling humans are supposed to give the visitors positive connections to the party and it's politics</p>
             </li>
             <li>
@@ -67,7 +96,8 @@
                 <h3>Political program</h3>
                 <p>The page should contain Studentpartiet's political views and a way to compare those views to that of other political parties.</p>
                 <p>The purpose of this page is to make the party's political views easily accessible if people wonder what the party's views are in one certain area, and how they compare to those of other parties. This is only for people wondering what their views is in a certain area, the party's main political objectives are promoted on the front page.</p>
-                <p>The design of this site is going to be an t</p>
+                <p>The design of this site is going to be a headline at the top. Below it, we are going to have select elements, with labels of what they are for. Below that again, we have a button that get the application started.</p>
+                <p>The application is going to consist of a HTML table, with two columns and two rows. The first row is going to have the name of the respective parties, and the second row is going to have their views. The table is going to be styled with collapsed 2px solid black borders.</p>
                 <p>This is the page where the political comparison application will be located.</p>
                 <p>This page consists of program.html and uses main.css and program.css for styling, and program.js for political comparison.</p>
             </li>
