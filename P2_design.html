@@ -14,12 +14,15 @@
         <h2>Purpose</h2>
         <p>The goal of this web site is to inform people about Studentpartiet, and their political views.</p>
         <h2>Goals</h2>
-        <p>The goal is to make a web site, that makes people vote for Studentpartiet</p>
+        <p>The goal is to make a web site that makes people vote for Studentpartiet</p>
         <h2>Audience</h2>
         <p>The audience of this website is primarily students.</p>
         <h2>Navigation</h2>
         <p>Navigation will primarily be through the navigation bar.</p>
         <p>The navigation bar is going to link to:</p>
+        <h2>File structure</h2>
+        <img src="img/struktur.PNG"/>
+        <img src="img/struktur2.PNG"/>
         <h2>Page Layout</h2>
         <ul>
             <li>
@@ -35,15 +38,72 @@
                 <p>The font color of the navigation bar will be orange, to as that is Studentpartiet's political color.</p>
                 <p>The navigation bar is going to consist of links in orange staying on an horizontal line when the user is on desktop, and when on mobile the navigation bar will be a yellow button you can press, and the menu will appear vertically below it.</p>
             </li>
+            <li>
+                <h3>Footer:</h3>
+                <p>The footer is going to be on the bottom of every page, and have some contact info and link to social media.</p>
+                <p>The font color of the navigation bar will be orange, to as that is Studentpartiet's political color.</p>
+                <p>The navigation bar is going to consist of links in orange staying on an horizontal line when the user is on desktop, and when on mobile the navigation bar will be a yellow button you can press, and the menu will appear vertically below it.</p>
+            </li>
         </ul>
         <h2>Content</h2>
         <ul>
             <li>
                 <h3>Front page:</h3>
-                <p>The page should contain a summary of the party's main political objectives and a photo of smiling humans.</p>
+                <p>The page should contain a summary of the party's main political objectives and a photo gallery of smiling humans.</p>
                 <p>The summary of the main political objective is supposed to give visitors an intuition of what the party's political stances.</p>
+                <p>This page is index.html, and will use main.css and index.css for styling and galleri.js as picture gallery. The pictures are bilde1.jpg and so on. The reason we use jpg is that it is the best format when having photos, because this have better color depth and thus represent the color on the photo better.</p>
+                <p>This page will also have a summary of Studentpartiet's main political objectives. They are going to be located beneath the photo gallery, so that visitors don't get overwhelmed by text. Each objective is going to be in a div with an orange backgrond-color.</p>
                 <p>The photos of smiling humans are supposed to give the visitors positive connections to the party and it's politics</p>
             </li>
+            <li>
+                <h3>Contact page</h3>
+                <p>The page should contain an address, a phone number, and an email address.</p>
+                <p>The page should also contain links Studentpartiet's accounts on different social media, like Facebook and Twitter.</p>
+                <p>The purpose of the page is to make it easy for visitors to contact the party if they have any questions about the party and it's political views. The point of the social media links is so that vistors may follow the party, for the latest news about them. Furthermore social media is the prefered communication channel for the youths, the site's main demographic.</p>
+                <p>This page consist of kontakt.html and uses main.css and kontakt.css for styling.</p>
+                                
+            </li>
+            <li>
+                <h3>Political program</h3>
+                <p>The page should contain Studentpartiet's political views and a way to compare those views to that of other political parties.</p>
+                <p>The purpose of this page is to make the party's political views easily accessible if people wonder what the party's views are in one certain area, and how they compare to those of other parties. This is only for people wondering what their views is in a certain area, the party's main political objectives are promoted on the front page.</p>
+                <p>The design of this site is going to be an t</p>
+                <p>This is the page where the political comparison application will be located.</p>
+                <p>This page consists of program.html and uses main.css and program.css for styling, and program.js for political comparison.</p>
+            </li>
+        </ul>
         <h2>Minimum requirements</h2>
+        <ul>
+            <li>
+                <h3>Picture gallery:</h3>
+                <p>This function is a picture gallery with transitions between different pictures.</p>
+                <p>The picture gallery is going to have two arrows for navigation. These will be on each site of the picture and will appear when the user hover the mouse over the picture. Because of this, the gallery will only have a still image on mobile</p>
+                <p>This will be made with HTML5 canvas. The arrows will appear when the mouseover function triggers on the canvas and disappear on mouseleave. To make the transition for the pictures, we will use window.setinterval and change the x-coordinate of the picture</p>
+            </li>
+            <li>
+                <h3>Political comparison:</h3>
+                <p>This function is that you have two select tags and a button. The first select tag has a number of policy areas where you might want to know Studentpartiet's opinion. The second select tag has a number of Norwegian political parties. When you click the button you get a comparison of Studenpartiet and the other party on that specific policy area</p>
+                <p>This will be made with JavaScript, with the different political views are laying in arrays. JavaScript is going to get the right value when the button is pressed, with the choices you made and add them into the HTML, and remove eventual political comparisons that are there already.</p>
+            </li>
+        </ul>
+        <h2>Plan</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Creator</th>
+                    <th>Task</th>
+                    <th>File</th>
+                    <th>Due date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ole Fredrik Berg</td>
+                    <td>Picture gallery in HTML5 canvas and JavaScript</td>
+                    <td>galleri.js and index.html</td>
+                    <td>10.11.2017</td>
+                </tr>
+            </tbody>
+        </table>
 	</body>
 </html>
