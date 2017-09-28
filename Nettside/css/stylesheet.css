@@ -9,7 +9,7 @@ header {
 	background-color: #e9a301;
 	box-shadow: 0px 0px 5px #e9a301;
 	font-family: 'Product Sans',Arial,sans-serif;
-	height: 50px;
+	height: 100px;
 	position: relative
 }
 
@@ -17,14 +17,14 @@ aside {
 	width: 0%;
 	float: left;
 	background-color: white;
-	height: calc(100% - 50px);
+	height: calc(100% - 100px);
 	display: none;
 }
 
 section {
 	width: 100%;
 	float: right;
-	height: calc(100% - 50px);
+	height: calc(100% - 100px);
 }
 
 footer {
@@ -35,12 +35,12 @@ footer {
 }
 
 #wrapper {
-	min-height: calc(100% - 50px);
+	min-height: calc(100% - 100px);
 	overflow: auto;
 }
 
 #innerContent {
-  	padding-bottom: 50px;
+  	padding-bottom: 100px;
 }
 
 .menuContainer {
@@ -85,13 +85,13 @@ footer {
                                   supported by Chrome and Opera */
 }
 
-@media screen and (max-device-width : 500px) {
+@media (max-width : 500px) {
 	#footerMenu {
 		font-size: 0.8em;
 	}
 }
 
-@media screen and (max-device-width : 400px) {
+@media (max-width : 400px) {
 	#footerMenu {
 		font-size: 0.65em;
 	}
