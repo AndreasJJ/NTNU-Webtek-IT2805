@@ -8,6 +8,7 @@ function openSidebarMenu() {
 	} else if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 		sidebar.style.display = 'block';
 		sidebar.style.width = '100%';
+		mainPanel.style.width = '0%';
 	}
 	else {
 		sidebar.style.display = 'block';
