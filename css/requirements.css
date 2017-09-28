@@ -34,6 +34,7 @@ header{
     width: 100%;
     height: 200px;
     background-color: #e9a301;
+    box-shadow: 0px 0px 10px #e9a301;
 }
 body{
     margin: 0px;
