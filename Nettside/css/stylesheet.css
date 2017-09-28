@@ -85,6 +85,18 @@ footer {
                                   supported by Chrome and Opera */
 }
 
+@media screen and (max-device-width : 500px) {
+	#footerMenu {
+		font-size: 0.8em;
+	}
+}
+
+@media screen and (max-device-width : 400px) {
+	#footerMenu {
+		font-size: 0.65em;
+	}
+}
+
 #footerMenu {
 	justify-content:center;
 	align-items:center;
