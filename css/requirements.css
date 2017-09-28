@@ -18,11 +18,20 @@ h1{
     color: #f9f9f9;
     font-size: 60px;
     margin-top: 0px;
-    padding: 50px;
+    padding: 20px;
 }
 h3{
     font-size: 1.1em;
     padding-top: 30px;
+}
+nav a{
+    border: solid grey 1px;
+    padding-top: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 5px;
+    background-color: #e9e9e9;
+    border-radius: 5px;
 }
 p{
     
@@ -32,10 +41,11 @@ li{
 }
 header{
     width: 100%;
-    height: 200px;
+    height: 110px;
     background-color: #e9a301;
 }
 body{
+    color: #333;
     margin: 0px;
     padding: 0px;
     font-family: helvetica, sans-serif;
