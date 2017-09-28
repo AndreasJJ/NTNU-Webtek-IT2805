@@ -65,6 +65,10 @@ footer {
 	padding-right: 10px;
 }
 
+.logo img {
+	height: 100%;
+}
+
 .logo h1 {	
 	font-weight: normal;
 	padding: 0 0 0 0;
@@ -79,6 +83,18 @@ footer {
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
+}
+
+@media screen and (max-device-width : 500px) {
+	#footerMenu {
+		font-size: 0.8em;
+	}
+}
+
+@media screen and (max-device-width : 400px) {
+	#footerMenu {
+		font-size: 0.65em;
+	}
 }
 
 #footerMenu {
