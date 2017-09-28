@@ -12,6 +12,15 @@ function openSidebarMenu() {
 	}
 	else {
 		sidebar.style.display = 'block';
+		//sidebar.animate([
+		  // keyframes
+		//  { transform: 'translateX(-300px)' }, 
+		//  { transform: 'translateX(0px)' }
+		//], { 
+		  // timing options
+		//  duration: 500,
+		//  iterations: 1
+		//});
 		sidebar.style.width = 'calc(100%/3)';
 		mainPanel.style.width = 'calc((100%/3)*2)';
 	}
