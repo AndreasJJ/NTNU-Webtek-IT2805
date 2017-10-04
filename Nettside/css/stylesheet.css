@@ -79,20 +79,38 @@ footer {
 	margin: 0 0 0 0;
 }
 
-#topnav ul li{
-	color: white;
-	list-style-type: none;
-	text-align: inherit;
-	float: left;
-
-
+@media (max-width : 800px) {
+	#topnav {
+		display: none;
+	}
 }
+
+#topnav {
+	width: 100%;
+}
+
+#topnav ul {
+	width: inherit;
+    display: table;
+    table-layout: fixed;
+
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+}
+
+#topnav ul li{
+	display: table-cell;
+	text-align: center;
+	list-style-type: none;
+	color: white;
+}
+
 #topnav ul li a{
 	text-decoration: none;
 	color: white;
-	width: 10%;
-	height: 75px;
-	text-align: center;
 }
 
 .noselect {
