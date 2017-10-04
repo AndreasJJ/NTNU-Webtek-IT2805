@@ -2,6 +2,7 @@ body {
 	padding: 0;
 	margin: 0;
 	background-color: #e8e8e8;
+	font-family: helvetica;
 }
 
 header {
@@ -120,25 +121,41 @@ footer {
 }#sidebar h2 {
 	margin-left: 15px;
 }
+#container {
+	width: 80%;
+	height: auto;
+	float: left;
+}
 #bilde img, #bilde canvas{
 	width: 100%;
-	float: none;
+	float: left;
 }
 #bilde{
-	width: 40%;
-	float: inherit;
+	width: 50%;
+	float: right;
 	height: auto;
-	margin-top: 30px;
-	margin-left: 3%;
+	margin-top: 95px;
+	margin-left: 5%;
 }
-
 #info {
-	width: 40%;
+	width: 42%;
 	float:left;
 	margin-top: 30px;
 	margin-left: 3%;
 }
 #nyheter {
-	width:10%;
+	width:15%;
 	float: right;
+	height: 100%;
+	padding-left: 2%;
+	padding-right: 2%;
+	border-left: 2px #e9a301 solid;
+	background-color: white;
+}
+#nyheter p {
+	border-bottom: solid #e9a301 2px;
+	padding-bottom: 10px;
+}
+#nyheter h3 {
+	margin-top: 15px;
 }
