@@ -11,6 +11,7 @@ header {
 	font-family: 'Product Sans',Arial,sans-serif;
 	height: 75px;
 	position: relative
+
 }
 
 aside {
@@ -57,6 +58,7 @@ footer {
 
 .hamburgerButton {
 	font-size: 1.5em;
+	color:white;
 }
 
 
@@ -117,4 +119,17 @@ footer {
 	list-style-type: none;
 }#sidebar h2 {
 	margin-left: 15px;
+}
+#bilde img{
+	width: 46%;
+	margin-right: 5%;
+	height: auto;
+	float: right;
+	margin-top: 30px;
+}
+#info {
+	width: 40%;
+	float: left;
+	margin-top: 30px;
+	margin-left: 5%;
 }
