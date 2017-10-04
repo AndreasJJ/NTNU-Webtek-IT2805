@@ -120,7 +120,7 @@ footer {
 }#sidebar h2 {
 	margin-left: 15px;
 }
-#bilde img{
+#bilde img, #bilde canvas{
 	width: 46%;
 	margin-right: 5%;
 	height: auto;
