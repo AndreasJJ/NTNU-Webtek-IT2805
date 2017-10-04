@@ -121,15 +121,28 @@ footer {
 	margin-left: 15px;
 }
 #bilde img{
-	width: 46%;
-	margin-right: 5%;
-	height: auto;
-	float: right;
-	margin-top: 30px;
+	width: 100%;
+	float: none;
+
 }
+#bilde {
+	width: 40%;
+	float:right;
+	height: auto;
+	margin-top: 30px;
+	margin-left: 3%;
+}
+
 #info {
 	width: 40%;
-	float: left;
+	float:left;
 	margin-top: 30px;
-	margin-left: 5%;
+	margin-left: 3%;
+}
+#nyheter {
+	width: 10%;
+	height: left;
+	background-color: black;
+	float: right;
+	margin-top: 30px;
 }
