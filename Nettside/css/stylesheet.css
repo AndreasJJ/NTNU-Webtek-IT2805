@@ -187,6 +187,7 @@ footer {
 	border-left: 2px #e9a301 solid;
 	background-color: white;
 	overflow: inherit;
+	overflow-wrap: break-word;
 }
 
 #nyheter p {
