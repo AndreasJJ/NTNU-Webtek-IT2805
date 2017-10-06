@@ -27,6 +27,7 @@ section {
 	width: 100%;
 	float: right;
 	height: calc(100% - 75px);
+	overflow: auto;
 }
 
 footer {
@@ -142,9 +143,6 @@ footer {
 	color:white;
 }
 
-padding-left: 5px;
-}
-
 #sidebar ul li {
 	list-style-type: none;
 }
@@ -155,8 +153,9 @@ padding-left: 5px;
 
 #container {
 	width: 80%;
-	height: auto;
+	height: 100%;
 	float: left;
+	overflow: inherit;
 }
 
 #bilde img, #bilde canvas{
@@ -187,6 +186,7 @@ padding-left: 5px;
 	padding-right: 2%;
 	border-left: 2px #e9a301 solid;
 	background-color: white;
+	overflow: inherit;
 }
 
 #nyheter p {
