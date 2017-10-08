@@ -1,29 +1,45 @@
 <!DOCTYPE html>
 
 <html>
-	<head>
-		<title>Project Design</title>
-		<meta charset="UTF-8">
-		<link href="css/requirements.css" rel="stylesheet" type="text/css"/>
 
-	</head>
+<head>
+    <title>Project Design</title>
+    <meta charset="UTF-8">
+    <link href="css/requirements.css" rel="stylesheet" type="text/css" />
 
-	<body>
-		<div id="contents">
+</head>
+
+<body>
+    <div id="contents">
 
         <header>
-					<h1>Project Design</h1>
-				</header>
+            <h1>Project Design</h1>
+        </header>
         <h3>Ole Fredrik Borgundvåg Berg, Olav Håberg Dimmen, Kasper Maagerø Svendsen, Andreas Jensen Jonassen and Liam Svanåsbakken Crouch</h3>
         <h3>25.09.2017</h3>
         <h2>Administrative Details</h2>
         <p>Our client is named Ragnhild Kristensen, and is the chief of communication at Studentpartiet. She is also a public communication student at NTNU.</p>
         <h2>Purpose</h2>
-        <p>The goal of this web site is to inform people about Studentpartiet, and their political views.</p>
+        <p>The purpose of the site is to spread information about Studentpartiet and it's political views, in order to get public support. It is also to make the audience more familiar with Studentpartiet's politicians. In other words, this page is primarily for people who might consider to support the party, and not the party's supporters themselves, however, the site is also for making supporters able to donate to the party and making them able to join the party. The voter participation rate is much lower for young adults than the overall population. This site is also for trying to make young people engage in politics in general, as that would mean a lager focus on student's interests.</p>
         <h2>Goals</h2>
-        <p>The goal is to make a web site that makes people vote for Studentpartiet</p>
+        <p>The goal is to make a web site that makes people support and vote for Studentpartiet</p>
         <h2>Audience</h2>
-        <p>The audience of this website is primarily students.</p>
+        <ul>
+            <li>
+                <h3>Who are they:</h3>
+                <p>Studentpartiet's primary audience is students, who are usually quite young (often between 18 and 30) and experienced at using the web.</p>
+            </li>
+            <li>
+                <h3>What are the consequences:</h3>
+                <ol>
+                    <li>Having a modern and appealing appearance is prioritized over accessibility.</li>
+                    <li>Young people surfing on the Internet often use a short period of time on each website, therefore it is important to make the party's main political objective promoted on the front page, so that people who are just having a short visit get an intuition of the party's political views.</li>
+                    <li>Young people also usually use updated browsers, something that makes CSS-compability issues quite unlikely.</li>
+                    <li>Social media is quite important for young people, this site's main demographic, therefore it is important that the site links to Stundentpartiet's accounts on social media, and asks visitors to follow them.</li>
+                    <li>It has proven harder to get young people to the polls than the population overall, which makes it important that this site also promotes activism, and not just educate the audience about Studentpartiet's views.</li>
+                </ol>
+            </li>
+        </ul>
         <h2>Navigation</h2>
         <p>Navigation will primarily be through the navigation bar, which is on the top of every page.</p>
         <p>The navigation bar is going to link to:</p>
@@ -50,8 +66,7 @@
         <p>Navigation will also go through the footer. It will include a link to the contact page and social media, because that's a standard on web sites. It will also link to the site map, in case people on the web page are looking for something in particular.</p>
 
         <h2>File structure</h2>
-        <img src="img/struktur.PNG"/>
-        <img src="img/struktur2.PNG"/>
+        <img src="img/struktur.PNG" />
         <h2>Page Layout</h2>
         <ul>
             <li>
@@ -110,6 +125,42 @@
                 <p>This is the page where the political comparison application will be located.</p>
                 <p>This page consists of program.html and uses main.css and program.css for styling, and program.js for political comparison.</p>
             </li>
+            <li>
+                <h3>Our politicians</h3>
+                <p>The page should contain pictures and a short summary of Studentpartiet's politicians, so that the visitors can learn to trust them, and eventually vote for them.</p>
+                <p>People usually trust people if they feel they know them on a deeper level, therefore this page intend to tell the personal stories of Stundentpartiet's politicians.</p>
+                <p>The page should also contain links to the politicians' accounts on social media, both so that people can get better acquainted with the party's politicians and so that people can get the latest news from their politicians and ask them questions if they have any.</p>
+                <p>The design is going to be the picture of several politicians smiling, and their story, as tiles.</p>
+                <p>The reason we use tile design, is that it will make the site more organized.</p>
+            </li>
+            <li>
+                <h3>About page</h3>
+                <p>The page should contain some basic information about the party.</p>
+                <p>As Studentpartiet is a brand new and mostly unknown party, this page is important, as the public would like some basic information about the party to understand it's history and it's goals.</p>
+                <p>Another purpose of this page is to make it clear to people that this is a serious party, when people hasn't heard of it before.</p>
+                <p>The design should be simple, as this should just be an overview page of the party. The idea is to not have much on the page, as the visitors shouldn't be overwhelmed with information.</p>
+                <p>Therefore the design would be a textbox with some information, and a picture of our logo next to it.</p>
+            </li>
+            <li>
+                <h3>History page</h3>
+                <p>The page should contain Studentpartiet's history on a timeline.</p>
+                <p>As with the about page, this page is to educate people about Studentpartiet, believing that it is easier for people to support them and understand why they fight if they know their history.</p>
+                <p>The design should have a timeline that consists of tiles, squares with information with an arrow towards the line, which appear when the user scolls down.</p>
+                <p>The purpose is to make a page that doesn't overwhelm the user by showing all the information at once, and to make it more exiting to read about their history by having animations.</p>
+            </li>
+            <li>
+                <h3>Supporting page</h3>
+                <p>The page should contain a way to donate to the party and a way to become a member of the party.</p>
+                <p>The page should also include dates for political meetings and demonstration, so that supporters find a way to promote the party's views, and people interested in the party find a meeting so that they can discuss the party's politics.</p>
+                <p>The page should also include open positions in the party, and ways to volunteer for the party. Among other things, they need someone volunteering as responsible for the web page, when this project is done</p>
+                <p>The purpose of this site is for supporters of the party to find way to help the party. It is also to promote activism among students, by helping them find ways to get their voices heard.</p>
+            </li>
+            <li>
+                <h3>Site map</h3>
+                <p>The page should contain a list of all the pages on this site. They will be sorted by hierarchy by what pages links to what pages.</p>
+                <p>The page would simply be an unordered list with unordered lists inside each other, as that is a simple, yet practical design.</p>
+                <p>The purpose of this page is so that visitors can find the page they are looking for, by having an easily read list.</p>
+            </li>
         </ul>
         <h2>Minimum requirements</h2>
         <ul>
@@ -129,10 +180,11 @@
                 <p>This function is that you have an vertical line in the middle of the web page, and when you are scrolling down new elements are appearing next to the line, with an animation.</p>
                 <p>This will be made with JavaScript, by having the different elements in an array, and get the scroll value when scrolling, and use it to add new elements along the line.</p>
             </li>
-						<li>
-								<h3>Navigation bar:</h3>
-								<p>The navigation bar will be located via the button in the top left of the user's screen. This will give the user direct access to the other contents of the webpage.</p>
-								<p></p>
+            <li>
+                <h3>Navigation bar:</h3>
+                <p>The navigation bar will be located via the button in the top left of the user's screen. This will give the user direct access to the other contents of the webpage.</p>
+                <p></p>
+            </li>
         </ul>
         <h2>Plan</h2>
         <table>
@@ -145,25 +197,25 @@
                 </tr>
             </thead>
             <tbody>
-								<tr>
-										<td>Ole Fredrik</td>
-										<td>HTML kontaktside</td>
-										<td>kontakt.html</td>
-										<td>20.10.2017</td>
-								</tr>
-								<tr>
+                <tr>
+                    <td>Ole Fredrik</td>
+                    <td>HTML kontaktside</td>
+                    <td>kontakt.html</td>
+                    <td>20.10.2017</td>
+                </tr>
+                <tr>
                     <td>Liam</td>
                     <td>HTML setup sitemap</td>
                     <td>sitemap.html</td>
                     <td>20.10.2017</td>
                 </tr>
-								<tr>
+                <tr>
                     <td>Olav</td>
                     <td>Picture edit</td>
                     <td>All of the required images(jpg)</td>
                     <td>20.10.2017</td>
                 </tr>
-								<tr>
+                <tr>
                     <td>Kasper, Andreas</td>
                     <td>CSS main stylesheet</td>
                     <td>main.css</td>
@@ -181,26 +233,27 @@
                     <td>historie.js and historie.html</td>
                     <td>05.11.2017</td>
                 </tr>
-								<tr>
+                <tr>
                     <td>Andreas</td>
                     <td>Navigation bar</td>
                     <td>navigation.js</td>
                     <td>05.11.2017</td>
                 </tr>
-								<tr>
+                <tr>
                     <td>Kasper</td>
                     <td>Javascript application, html document, comparison of political views</td>
                     <td>program.js and program.html</td>
                     <td>05.11.2017</td>
                 </tr>
-								<tr>
+                <tr>
                     <td>Olav</td>
                     <td>HTML setup Om, Politikere, Støtte</td>
                     <td>om.html, politikere.html, stotte.html</td>
                     <td>05.11.2017</td>
                 </tr>
             </tbody>
-					</table>
-        </div>
-	</body>
+        </table>
+    </div>
+</body>
+
 </html>
