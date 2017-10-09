@@ -27,6 +27,7 @@ section {
 	width: 100%;
 	float: right;
 	height: calc(100% - 75px);
+	overflow: auto;
 }
 
 footer {
@@ -139,32 +140,29 @@ footer {
 	justify-content:center;
 	align-items:center;
 	display: flex;
+	color:white;
 }
 
-#footerMenu ul {
-	display: flex;
-
-}
-
-#footerMenu ul li {
-	list-style-type: none;
-	padding-right: 5px;
-	padding-left: 5px;
-}
 #sidebar ul li {
 	list-style-type: none;
-}#sidebar h2 {
+}
+
+#sidebar h2 {
 	margin-left: 15px;
 }
+
 #container {
 	width: 80%;
-	height: auto;
+	height: 100%;
 	float: left;
+	overflow: inherit;
 }
+
 #bilde img, #bilde canvas{
 	width: 100%;
 	float: left;
 }
+
 #bilde{
 	width: 50%;
 	float: right;
@@ -172,12 +170,14 @@ footer {
 	margin-top: 95px;
 	margin-left: 5%;
 }
+
 #info {
 	width: 42%;
 	float:left;
 	margin-top: 30px;
 	margin-left: 3%;
 }
+
 #nyheter {
 	width:15%;
 	float: right;
@@ -186,11 +186,15 @@ footer {
 	padding-right: 2%;
 	border-left: 2px #e9a301 solid;
 	background-color: white;
+	overflow: inherit;
+	overflow-wrap: break-word;
 }
+
 #nyheter p {
 	border-bottom: solid #e9a301 2px;
 	padding-bottom: 10px;
 }
+
 #nyheter h3 {
 	margin-top: 15px;
 }
