@@ -198,3 +198,25 @@ footer {
 #nyheter h3 {
 	margin-top: 15px;
 }
+.label{
+    text-align: right;
+}
+#melding{
+    height: 100%;
+    width: 100%;
+    min-height: 100px;
+    min-width: 200px;
+}
+.boxsize{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#send-melding{
+    width: 100%;
+    margin: auto;
+}
+#send-melding td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
