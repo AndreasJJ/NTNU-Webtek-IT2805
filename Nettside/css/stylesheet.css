@@ -164,7 +164,7 @@ footer {
 }
 
 #bilde{
-	width: 50%;
+	width: 35%;
 	float: right;
 	height: auto;
 	margin-top: 95px;
@@ -172,7 +172,7 @@ footer {
 }
 
 #info {
-	width: 42%;
+	width: 50%;
 	float:left;
 	margin-top: 30px;
 	margin-left: 3%;
@@ -219,4 +219,25 @@ footer {
 #send-melding td{
     padding-top: 10px;
     padding-bottom: 10px;
+}
+.sak{
+    width: 31%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.ikon{
+    font-size: 50px;
+    color: #e9a301;
+    padding-left: 10px;
+}
+#kontakt{
+    width: 50%;
+    background-color: #f5f5f5;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    padding: 10px;
+    margin: auto;
 }
