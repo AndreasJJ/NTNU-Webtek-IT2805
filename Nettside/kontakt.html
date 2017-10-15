@@ -58,38 +58,39 @@
                     <div id="container">
 
                         <div id="info">
-                            <h1>Kontakt oss:</h1>
-                            <form method="post" action="/send.php">
-                                <table id="send-melding">
+                            <div id="kontakt">
+                                <h1>Kontakt oss:</h1>
+                                <form method="post" action="/send.php">
+                                    <table id="send-melding">
+                                        <tr>
+                                            <td class="label">Navn:</td><td><input id="navn" type="text" name="navn"/></td><td id>Melding:</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="label">Bedrift:</td><td><input id="bedrift" type="text" name="bedrift"/></td><td rowspan="3"><textarea class="boxsize" id="melding" name="melding"></textarea></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="label">Epost:</td><td><input id="epost" type="text" name="epost"/></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td><td><input value="Send melding" type="submit"></td>
+                                        </tr>
+                                    </table>
+                                </form>
+                                <hr/>
+                                <img src="img/logoGammel.PNG">
+                                <table>
                                     <tr>
-                                        <td class="label">Navn:</td><td><input id="navn" type="text" name="navn"/></td><td id>Melding:</td>
+                                        <td class="label">Email:</td><td>kontakt@studentpartiet.no</td>
                                     </tr>
                                     <tr>
-                                        <td class="label">Bedrift:</td><td><input id="bedrift" type="text" name="bedrift"/></td><td rowspan="3"><textarea class="boxsize" id="melding" name="melding"></textarea></td>
+                                        <td class="label">Telefon:</td><td>+47 75 54 55 55</td>
                                     </tr>
                                     <tr>
-                                        <td class="label">Epost:</td><td><input id="epost" type="text" name="epost"/></td>
-                                    </tr>
-                                    <tr>
-                                        <td></td><td><input value="Send melding" type="submit"></td>
+                                        <td class="label">Adresse:</td><td>Høyskoleringen 7, 7491 Trondheim</td>
                                     </tr>
                                 </table>
-                            </form>
-                            <hr/>
-                            <img src="img/logoGammel.PNG">
-                            <table>
-                                <tr>
-                                    <td class="label">Email:</td><td>kontakt@studentpartiet.no</td>
-                                </tr>
-                                <tr>
-                                    <td class="label">Telefon:</td><td>+47 75 54 55 55</td>
-                                </tr>
-                                <tr>
-                                    <td class="label">Adresse:</td><td>Høyskoleringen 7, 7491 Trondheim</td>
-                                </tr>
-                            </table>
-                        </div>
-
+                            </div>
+                            </div>
                     </div>
 
                     <div id="nyheter">
