@@ -5,7 +5,7 @@ var bilde1 = new Image();
 var tegn = function () {
     ctx.drawImage(bilder[bildenr], 0, 0);
 }
-bilde1.onload = tegn;
+bilde1.onload = tegn; //tegner første bilde først når det er lastet inn
 var bilde2 = new Image();
 var bilde3 = new Image();
 var bilde4 = new Image();
@@ -20,14 +20,14 @@ var nesteX = 0;
 var musX = 0;
 var musY = 0;
 var overCanvas = false;
-for (x in bilder) {
+for (x in bilder) { //henter bilder fra adressene
     bilder[x].src = "bilder/bilde" + x.toString() + ".jpg";
 }
 var neste = bilder[bildenr];
 var dette = bilder[bildenr];
 
 function bytte(dette, fremover) {
-    if (bevegelse != null) {
+    if (bevegelse != null) { //fjerner animasjon om det er noen
         clearInterval(bevegelse);
     }
     detteX = 0;
@@ -35,7 +35,7 @@ function bytte(dette, fremover) {
     if (!fremover) {
         nesteX *= -1;
     }
-    if (bilder.indexOf(dette) == 4 && fremover) {
+    if (bilder.indexOf(dette) == 4 && fremover) { //henter neste bilde
         neste = bilder[0];
     } else if (bilder.indexOf(dette) == 0 && !fremover) {
         neste = bilder[4];
@@ -44,7 +44,7 @@ function bytte(dette, fremover) {
     } else {
         neste = bilder[bilder.indexOf(dette) - 1];
     }
-    bevegelse = window.setInterval(function (event) {
+    bevegelse = window.setInterval(function (event) { //selve animasjonen med bildebytte
         if (fremover) {
             detteX -= 10;
             nesteX -= 10;
@@ -54,7 +54,7 @@ function bytte(dette, fremover) {
         }
         ctx.drawImage(dette, detteX, 0);
         ctx.drawImage(neste, nesteX, 0);
-        if (overCanvas) {
+        if (overCanvas) { //tegner pilene på canvasen hvis det er noen
             if (pilvising != null) {
                 clearInterval(pilvising);
             }
@@ -64,7 +64,7 @@ function bytte(dette, fremover) {
             ctx.fillRect(canvas.width - 80, 0, 80, 437);
             ctx.globalAlpha = 1;
             ctx.beginPath();
-            ctx.moveTo(60, 180);
+            ctx.moveTo(60, 180); 
             ctx.lineTo(60, 240);
             ctx.lineTo(20, 210);
             ctx.closePath();
@@ -83,7 +83,7 @@ function bytte(dette, fremover) {
 }
 
 function vis_piler(vis) {
-    if (pilvising != null) {
+    if (pilvising != null) { //fjerner animasjon m/ pilflytting om det er noen
         clearInterval(pilvising);
     }
     if (vis) {
@@ -93,7 +93,7 @@ function vis_piler(vis) {
         venstreX = 0;
         hoyreX = canvas.width - 80;
     }
-    pilvising = window.setInterval(function () {
+    pilvising = window.setInterval(function () { //henter frem og tilbake piler
         if (vis) {
             venstreX += 5;
             hoyreX -= 5;
@@ -125,13 +125,13 @@ function vis_piler(vis) {
     }, 10);
 }
 
-function klikk(event) {
+function klikk(event) { //registerer klikk på canvasen og finner hvor de er
     musX = event.pageX - canvas.offsetLeft;
     musY = event.pageY - canvas.offsetTop;
     var arrowwidth = 80 * canvas.offsetWidth/canvas.width;
-    if (musX > 0 && musX < arrowwidth) {
+    if (musX > 0 && musX < arrowwidth) { //klikker på pil tilbake
         bytte(neste, false);
-    } else if (musX > canvas.offsetWidth - arrowwidth && musX < canvas.offsetWidth) {
+    } else if (musX > canvas.offsetWidth - arrowwidth && musX < canvas.offsetWidth) { //klikker på pil frem
         bytte(neste, true);
     }
 }
