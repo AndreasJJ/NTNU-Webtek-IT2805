@@ -1,3 +1,9 @@
+/*
+    FILE NAME: js/galleri.js
+WRITTEN BY: Ole Fredrik Borgundvåg Berg
+WHEN: Oktober 2017
+PURPOSE: lage et dynamisk billedgalleri
+*/
 var canvas = document.getElementById("bildegalleri");
 var ctx = canvas.getContext("2d");
 var bildenr = 0;
