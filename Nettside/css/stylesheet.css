@@ -1,10 +1,35 @@
+/* Main wrapper and containers for the footer to stay at the bottom and genereally to make it work */
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+}
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
 body {
 	padding: 0;
 	margin: 0;
 	background-color: #e8e8e8;
 	font-family: helvetica;
+    position: relative;
+    height: 100%;
 }
 
+#wrapper {
+    width: 100%;
+    min-height: 100%;
+}
+
+#content {
+    overflow: auto;
+    padding-bottom: 50px;
+}
+
+/*  *************** END *************** */
+/* Header and navigation bar */
 header {
 	width: 100%;
 	background-color: #e9a301;
@@ -15,86 +40,56 @@ header {
 
 }
 
-aside {
-	width: 0%;
-	float: left;
-	background-color: white;
-	height: calc(100% - 75px);
-	display: none;
-}
-
-section {
-	width: 100%;
-	float: right;
-	height: calc(100% - 75px);
-	overflow: auto;
-}
-
-footer {
-	background-color: #e9a301;
-	position: relative;
-  	margin-top: -50px;
-  	height: 50px;
-}
-
-#wrapper {
-	min-height: calc(100% - 75px);
-	overflow: auto;
-}
-
-#innerContent {
-  	padding-bottom: 75px;
-}
-
 .menuContainer {
-	height: 100%;
-	display: flex;
-	width: 100%;
+    height: 100%;
+    display: flex;
+    width: 100%;
 }
 
 .menu {
-	padding: 10px;
-	width: 100%;
-	align-items: center;
-	display: flex;
+    padding: 10px;
+    width: 100%;
+    align-items: center;
+    display: flex;
 }
 
 .hamburgerButton {
-	font-size: 1.5em;
-	color:white;
+    font-size: 1.5em;
+    color:white;
 }
 
 
 .logo {
-	padding-left: 10px;
-	padding-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100%
 }
 
 .logo img {
-	height: 100%;
+    height: 100%;
 }
 
 .logo h1 {
-	font-weight: normal;
-	padding: 0 0 0 0;
-	margin: 0 0 0 0;
+    font-weight: normal;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
 }
 
 @media (max-width : 800px) {
-	#topnav {
-		display: none;
-	}
+    #topnav {
+        display: none;
+    }
 }
 
 #topnav {
-	width: 100%;
+    width: 100%;
+    padding: 10px;
 }
 
 #topnav ul {
-	width: inherit;
+    width: inherit;
     display: table;
     table-layout: fixed;
-
     -webkit-margin-before: 0;
     -webkit-margin-after: 0;
     -webkit-margin-start: 0;
@@ -103,16 +98,49 @@ footer {
 }
 
 #topnav ul li{
-	display: table-cell;
-	text-align: center;
-	list-style-type: none;
-	color: white;
+    display: table-cell;
+    text-align: center;
+    list-style-type: none;
+    color: white;
 }
 
 #topnav ul li a{
-	text-decoration: none;
-	color: white;
+    text-decoration: none;
+    color: white;
 }
+/*  *************** END *************** */
+/* Footer */
+
+footer {
+	background-color: #e9a301;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-top: -50px;
+    clear: both;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+}
+/*  *************** END *************** */
+/* Sidebar Navigation */
+#sideNav ul li {
+    list-style-type: none;
+}
+
+#sideNav h2 {
+    margin-left: 15px;
+}
+
+#sideNav {
+    width: 0%;
+    float: left;
+    background-color: white;
+    display: none;
+}
+/*  *************** END *************** */
 
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
@@ -124,38 +152,10 @@ footer {
                                   supported by Chrome and Opera */
 }
 
-@media (max-width : 500px) {
-	#footerMenu {
-		font-size: 0.8em;
-	}
-}
-
-@media (max-width : 400px) {
-	#footerMenu {
-		font-size: 0.65em;
-	}
-}
-
-#footerMenu {
-	justify-content:center;
-	align-items:center;
-	display: flex;
-	color:white;
-}
-
-#sidebar ul li {
-	list-style-type: none;
-}
-
-#sidebar h2 {
-	margin-left: 15px;
-}
-
-#container {
-	width: 80%;
-	height: 100%;
-	float: left;
-	overflow: inherit;
+#mainContent {
+    padding: 20px;
+    width: 80%;
+    float: left;
 }
 
 #bilde img, #bilde canvas{
@@ -180,7 +180,7 @@ footer {
 }
 
 #nyheter {
-	width:15%;
+	width: 15%;
 	float: right;
 	height: 100%;
 	padding-left: 2%;
@@ -334,8 +334,8 @@ footer {
 }
 #frontpage{
     background-color: #f7f7f7;
-    padding: 40px;
     width: 100%;
+    padding: 10px;
     -moz-border-radius:15px;
     -webkit-border-radius:15px;
     border-radius:15px;
@@ -343,11 +343,6 @@ footer {
 .button-div{
     text-decoration: none;
 }
-h1{
+h1 {
     font-size: 28px;
-}
-.footer-pusher{
-    clear: both;
-    width: 100%;
-    height: 100px;
 }
