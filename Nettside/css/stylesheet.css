@@ -330,6 +330,7 @@ footer {
     margin: 0 auto;
     display: block;
     text-decoration: none;
+    color: #000000;
 }
 #read-more:hover{
     background-color: #eeeeee;
