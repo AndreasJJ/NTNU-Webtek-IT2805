@@ -1,8 +1,8 @@
 /* Main wrapper and containers for the footer to stay at the bottom and genereally to make it work */
-* { 
-    -moz-box-sizing: border-box; 
-    -webkit-box-sizing: border-box; 
-     box-sizing: border-box; 
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+     box-sizing: border-box;
 }
 html {
     height: 100%;
@@ -19,13 +19,13 @@ body {
 }
 
 #wrapper {
-    width: 100%;
-    min-height: 100%;
+    display: flex;
+    min-height: Calc(100% - 125px);
 }
 
 #content {
-    overflow: auto;
-    padding-bottom: 50px;
+    display: flex;
+    width: 100%;
 }
 
 /*  *************** END *************** */
@@ -113,10 +113,8 @@ header {
 
 footer {
 	background-color: #e9a301;
-    position: relative;
     width: 100%;
     height: 50px;
-    margin-top: -50px;
     clear: both;
     text-align: center;
     justify-content: center;
@@ -126,12 +124,30 @@ footer {
 }
 /*  *************** END *************** */
 /* Sidebar Navigation */
-#sideNav ul li {
-    list-style-type: none;
+#sideNav ul {
+    min-height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: table;
+    table-layout: fixed;
+    border-collapse: collapse;
 }
 
-#sideNav h2 {
-    margin-left: 15px;
+#sideNav ul li {
+    list-style-type: none;
+    text-align: center;
+    display: table-row;
+    border-bottom: 1px solid black;
+}
+
+#sideNav ul li:last-child {
+    border-bottom: none;
+}
+
+#sideNav ul li span {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 #sideNav {
@@ -180,9 +196,9 @@ footer {
 }
 
 #nyheter {
+    flex: 1;
 	width: 15%;
 	float: right;
-	height: 100%;
 	padding-left: 2%;
 	padding-right: 2%;
 	border-left: 2px #e9a301 solid;
@@ -199,6 +215,7 @@ footer {
 #nyheter h3 {
 	margin-top: 15px;
 }
+/* Til kontaktside*/
 .label{
     text-align: right;
 }
@@ -222,27 +239,6 @@ footer {
 #send-melding td{
     padding-top: 10px;
     padding-bottom: 10px;
-}
-.sak{
-    min-width: 150px;
-    width: 27%;
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 5px;
-    margin-right: 5px;
-    background-color: #eeeeee;
-    -moz-border-radius:10px;
-    -webkit-border-radius:10px;
-    border-radius:10px;
-    min-height: 280px;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.ikon{
-    font-size: 50px;
-    color: #e9a301;
-    padding-left: 10px;
 }
 #kontakt{
     min-width: 200px;
@@ -279,10 +275,33 @@ footer {
 .center{
     margin: auto;
 }
-
+/*  *************** END *************** */
+/* Til forside*/
 #hovedinfo{
     width: 400px;
 }
+.sak{
+    min-width: 150px;
+    width: 27%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #eeeeee;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    min-height: 280px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.ikon{
+    font-size: 50px;
+    color: #e9a301;
+    padding-left: 10px;
+}
+
 @media screen and (max-width: 1121px){
     #bilde, #hovedinfo{
         width: 100%;
@@ -359,3 +378,176 @@ footer .link{
         width: 100%;
     }
 }
+/*  *************** END *************** */
+/* Til kontaktsside */
+#omMain{
+  border: 0px solid white;
+  background-color: white;
+  border-radius: 4px;
+  margin: 20%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  color: grey;
+  padding: 2%;
+  padding-top: 1%;
+}
+
+#omTitle{
+  text-align: center;
+  font-size: 350%;
+  font-family: Times;
+}
+#omTekst{
+  position: relative;
+  border: 3px solid #313335;
+  overflow: hidden;
+  padding: 1%;
+}
+#omContent img{
+  float: left;
+  margin: 2%;
+  width: 400px;
+}
+@media screen and (max-width: 1200px){
+    #omContent img{
+      width: 300px;
+      float: none;
+      padding: 2%;
+    }
+    #omMain{
+      margin: 5%;
+    }
+}
+.profilPolitiker{
+  border: 5px solid #e9a301;
+  margin: 30px;
+  display: inline-block;
+  padding: 5px;
+  text-align: center;
+  width: 230px;
+  border-radius: 15px;
+  background-color: white;
+  color: grey;
+  min-height: 450px;
+  }
+.profilPolitiker h2{
+  color: black;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  padding-bottom: 3px;
+  font-weight: lighter;
+  font-size: 190%;
+}
+.profilPolitiker p{
+  text-align: left;
+  min-height: 120px;
+}
+.profilPolitiker img{
+  width: 200px;
+  height: 270px;
+}
+.profilPolitiker a{
+  margin: 38px;
+  font-size: 140%;
+}
+
+#minPolitikerside{
+  max-width: 90%;
+  margin: auto;
+}
+#minPolitikerside h1{
+  color: grey;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  text-align: center;
+  font-size: 300%;
+  font-weight: lighter;
+  font-style: italic;
+}
+/*  *************** END *************** */
+/* Til støtteside */
+#stotte {
+    margin: auto;
+}
+
+#stottDonasjon input{
+  width: 200px;
+  height: 50px;
+}
+#stottDonasjon{
+  margin: auto;
+  max-width: 70%;
+}
+#stottDonasjon input[type="submit"]{
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+  margin-top: 10px;
+  background-color: #e9a301;
+}
+#stottDonasjon input:checked + label{
+  background-color: #e9a301;
+}
+input[type="radio"]{
+  display: none;
+}
+label{
+  width: 250px;
+  height: 70px;
+  background-color: white;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  -ms-appearance: button;
+  vertical-align: middle;
+  padding-top: 20px;
+  font-size: 160%;
+  box-shadow: 2px 2px 1px grey;
+  margin: 12px;
+  color: grey;
+}
+.registrerTittel{
+  font-size: 300%;
+  font-weight: lighter;
+  color: grey;
+}
+.registrerTittel:hover{
+  cursor: default;
+}
+#registrerMedlem{
+  border: 8px solid grey;
+  padding: 30px;
+  max-width: 800px;
+  margin: auto;
+  box-shadow: 3px 3px 2px grey;
+  margin-bottom: 8%;
+  background-color: white;
+
+}
+#registrerMedlem input{
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  background-color: lightgrey;
+  font-size: 150%;
+}
+/*Gjør placeholderene til kursiv, uten å påvirke brukerens egen input-stil*/
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-style: oblique;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  font-style: oblique;
+}
+:-moz-placeholder { /* Firefox 19+ */
+  font-style: oblique;
+}
+#registrerMedlem input[type="submit"]{
+  background-color: #e9a301;
+  border-radius: 4px;
+  font-size: 200%;
+  padding: 30px 12px 30px 12px;
+  border: 1px solid grey;
+}
+#registrerMedlem input[type="submit"]:hover{
+  background-color: grey;
+}
+/*  *************** END *************** */
