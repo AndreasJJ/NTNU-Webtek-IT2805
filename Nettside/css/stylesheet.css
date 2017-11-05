@@ -164,7 +164,7 @@ footer {
 }
 
 #bilde{
-	width: 35%;
+	width: 45%;
 	float: right;
 	height: auto;
 	margin-top: 10px;
@@ -234,7 +234,7 @@ footer {
     -moz-border-radius:10px;
     -webkit-border-radius:10px;
     border-radius:10px;
-    min-height: 250px;
+    min-height: 280px;
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -279,33 +279,20 @@ footer {
 .center{
     margin: auto;
 }
-@media screen and (max-width: 690px){
-    .float-left, .float-right{
-        margin: auto;
-        float: none;
-        clear: both;
-    }
-    #send-melding > .float-right{
-        width: 50%;
-    }
-    
-    #nyheter{
-        display: none;
-    }
-    #container{
-        width: 100%;
-    }
-}
+
 #hovedinfo{
     width: 400px;
 }
-@media screen and (max-width: 950px){
+@media screen and (max-width: 1121px){
     #bilde, #hovedinfo{
         width: 100%;
         max-width: 10000px;
     }
     #bilde{
         margin-bottom: 20px;
+    }
+    .sak{
+        min-height: 355px;
     }
 }
 #kontakt img{
@@ -335,7 +322,7 @@ footer {
 #frontpage{
     background-color: #f7f7f7;
     width: 100%;
-    padding: 10px;
+    padding: 30px 50px;
     -moz-border-radius:15px;
     -webkit-border-radius:15px;
     border-radius:15px;
@@ -351,4 +338,24 @@ footer .link{
 }
 #kontakt td:nth-child(2){
     text-align: left;
+}
+@media screen and (max-width: 690px){
+    .float-left, .float-right{
+        margin: auto;
+        float: none;
+        clear: both;
+    }
+    #send-melding > .float-right{
+        width: 50%;
+    }
+
+    #nyheter{
+        display: none;
+    }
+    #mainContent{
+        width: 100%;
+    }
+    #container{
+        width: 100%;
+    }
 }
