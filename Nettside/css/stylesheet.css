@@ -113,7 +113,6 @@ header {
 
 footer {
 	background-color: #e9a301;
-    position: relative;
     width: 100%;
     height: 50px;
     clear: both;
@@ -125,12 +124,30 @@ footer {
 }
 /*  *************** END *************** */
 /* Sidebar Navigation */
-#sideNav ul li {
-    list-style-type: none;
+#sideNav ul {
+    min-height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: table;
+    table-layout: fixed;
+    border-collapse: collapse;
 }
 
-#sideNav h2 {
-    margin-left: 15px;
+#sideNav ul li {
+    list-style-type: none;
+    text-align: center;
+    display: table-row;
+    border-bottom: 1px solid black;
+}
+
+#sideNav ul li:last-child {
+    border-bottom: none;
+}
+
+#sideNav ul li span {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 #sideNav {
