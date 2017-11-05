@@ -24,7 +24,8 @@ body {
 }
 
 #content {
-    display: flex;  /* use the flex model */
+    display: flex;
+    width: 100%;
 }
 
 /*  *************** END *************** */
@@ -433,6 +434,10 @@ footer .link{
   font-size: 300%;
   font-weight: lighter;
   font-style: italic;
+}
+
+#stotte {
+    margin: auto;
 }
 
 #stottDonasjon input{
