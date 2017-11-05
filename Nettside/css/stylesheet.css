@@ -19,13 +19,12 @@ body {
 }
 
 #wrapper {
-    width: 100%;
-    min-height: 100%;
+    display: flex;
+    min-height: Calc(100% - 125px);
 }
 
 #content {
-    overflow: auto;
-    padding-bottom: 50px;
+    display: flex;  /* use the flex model */
 }
 
 /*  *************** END *************** */
@@ -116,7 +115,6 @@ footer {
     position: relative;
     width: 100%;
     height: 50px;
-    margin-top: -50px;
     clear: both;
     text-align: center;
     justify-content: center;
@@ -180,9 +178,9 @@ footer {
 }
 
 #nyheter {
+    flex: 1;
 	width: 15%;
 	float: right;
-	height: 100%;
 	padding-left: 2%;
 	padding-right: 2%;
 	border-left: 2px #e9a301 solid;
