@@ -492,11 +492,19 @@ footer .link{
   -webkit-border-radius:15px;
   border-radius:15px;
 }
-#programSaker {
-  list-style: none;
+#programSaker ul{
+  list-style-type: none;
 }
-#programAnnetPari{
-  list-style: none;
+#programSak li{
+  width: 130px;
+  height: 50px;
+  border: solid black 1px;
+  text-align: center;
+  margin:3px;
+  padding-top: 5px;
+}
+#programAnnetParti ul{
+  list-style-type: none;
 }
 
 /*  *************** END *************** */
