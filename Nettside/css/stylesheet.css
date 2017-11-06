@@ -546,6 +546,7 @@ input[type="radio"]{
   font-size: 300%;
   font-weight: lighter;
   color: grey;
+  text-align: center;
 }
 .registrerTittel:hover{
   cursor: default;
