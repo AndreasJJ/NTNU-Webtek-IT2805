@@ -1,11 +1,11 @@
 var sideNavLinks = document.getElementsByClassName("sideNavLink");
-Array.from(sideNavLinks).forEach(function(element) {
+Array.from(sideNavLinks).forEach( function(element) {
       element.addEventListener('click', linkNav);
 });
 
 
 function linkNav(e) {
-	switch(e.target.innerText.toLowerCase()) {
+	switch (e.target.innerText.toLowerCase()) {
 		case "om oss":
 			location.href = 'om.html';
 			break;
