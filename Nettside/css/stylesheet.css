@@ -517,6 +517,7 @@ label{
   font-size: 300%;
   font-weight: lighter;
   color: grey;
+  margin-left: 28%;
 }
 .registrerTittel:hover{
   cursor: default;
@@ -551,9 +552,22 @@ label{
 #registrerMedlem input[type="submit"]{
   background-color: #e9a301;
   border-radius: 4px;
+  margin-left: 250px;
   font-size: 200%;
   padding: 30px 12px 30px 12px;
   border: 1px solid grey;
+}
+@media screen and (max-width: 760px){
+  #registrerMedlem input[type="submit"]{
+    margin-left: 70px;
+  }
+  .registrerTittel{
+    margin-left: 10%;
+  }
+  #registrerMedlem{
+    margin: 30px;
+    width: 400px;
+  }
 }
 #registrerMedlem input[type="submit"]:hover{
   background-color: grey;
