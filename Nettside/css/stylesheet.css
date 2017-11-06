@@ -484,13 +484,14 @@ footer .link{
   height: 50px;
 }
 #stottDonasjon{
-  margin: auto;
+  margin: 0px 20%;
   max-width: 70%;
 }
 #stottDonasjon input[type="submit"]{
   font-size: 28px;
   font-weight: bold;
   color: black;
+  margin-left: 32%;
   margin-top: 10px;
   background-color: #e9a301;
 }
@@ -500,7 +501,7 @@ footer .link{
 input[type="radio"]{
   display: none;
 }
-label{
+#stotte label{
   width: 250px;
   height: 70px;
   background-color: white;
@@ -508,10 +509,11 @@ label{
   -moz-appearance: button;
   -ms-appearance: button;
   vertical-align: middle;
+  text-align: center;
   padding-top: 20px;
-  font-size: 160%;
+  font-size: 170%;
   box-shadow: 2px 2px 1px grey;
-  margin: 12px;
+  margin: 10px;
   color: grey;
 }
 .registrerTittel{
