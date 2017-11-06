@@ -8,4 +8,5 @@
 
 ## Informasjon
 Prosjektidé: nettside til partiet Studentpartiet
+
 Link: https://andreasjj.github.io/webtek/Nettside/index.html
