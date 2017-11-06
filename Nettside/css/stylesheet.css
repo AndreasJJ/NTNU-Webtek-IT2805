@@ -304,6 +304,9 @@ footer {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+#sakbeholder{
+    text-align: center;
+}
 .ikon{
     font-size: 50px;
     color: #e9a301;
@@ -551,6 +554,7 @@ input[type="radio"]{
   font-size: 300%;
   font-weight: lighter;
   color: grey;
+  text-align: center;
 }
 .registrerTittel:hover{
   cursor: default;
