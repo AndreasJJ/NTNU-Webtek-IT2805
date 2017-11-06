@@ -156,6 +156,7 @@ footer {
 #sideNav ul li span {
     display: table-cell;
     vertical-align: middle;
+    cursor:default;
 }
 
 #sideNav ul li span a {
