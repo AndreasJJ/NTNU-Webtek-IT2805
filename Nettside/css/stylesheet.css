@@ -475,6 +475,26 @@ footer .link{
 }
 /*  *************** END *************** */
 /* Til Programside */
+#programContent{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}
+#programSak{
+  background-color: #f7f7f7;
+  width: 100%;
+  padding: 30px 50px;
+  -moz-border-radius:15px;
+  -webkit-border-radius:15px;
+  border-radius:15px;
+}
+#programSaker {
+  list-style: none;
+}
+#programAnnetPari{
+  list-style: none;
+}
 
 /*  *************** END *************** */
 /* Til støtteside */
