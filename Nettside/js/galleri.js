@@ -27,7 +27,7 @@ var musX = 0;
 var musY = 0;
 var overCanvas = false;
 for (x in bilder) { //henter bilder fra adressene
-    bilder[x].src = "img/galleri" + x.toString() + ".jpg";
+    bilder[x].src = "img/galleri/bilde" + x.toString() + ".jpg";
 }
 var neste = bilder[bildenr];
 var dette = bilder[bildenr];
