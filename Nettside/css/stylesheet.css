@@ -305,6 +305,9 @@ footer {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+#sakbeholder{
+    text-align: center;
+}
 .ikon{
     font-size: 50px;
     color: #e9a301;
@@ -490,11 +493,19 @@ footer .link{
   -webkit-border-radius:15px;
   border-radius:15px;
 }
-#programSaker {
-  list-style: none;
+#programSaker ul{
+  list-style-type: none;
 }
-#programAnnetPari{
-  list-style: none;
+#programSak li{
+  width: 130px;
+  height: 50px;
+  border: solid black 1px;
+  text-align: center;
+  margin:3px;
+  padding-top: 5px;
+}
+#programAnnetParti ul{
+  list-style-type: none;
 }
 
 /*  *************** END *************** */
@@ -544,6 +555,7 @@ input[type="radio"]{
   font-size: 300%;
   font-weight: lighter;
   color: grey;
+  text-align: center;
 }
 .registrerTittel:hover{
   cursor: default;
