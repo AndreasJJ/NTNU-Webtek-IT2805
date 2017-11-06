@@ -484,14 +484,14 @@ footer .link{
   height: 50px;
 }
 #stottDonasjon{
-  margin: 0px 20%;
-  max-width: 70%;
+  margin: auto;
+  max-width: 80%;
 }
 #stottDonasjon input[type="submit"]{
   font-size: 28px;
   font-weight: bold;
   color: black;
-  margin-left: 32%;
+  margin-left: 30%;
   margin-top: 10px;
   background-color: #e9a301;
 }
@@ -520,7 +520,6 @@ input[type="radio"]{
   font-size: 300%;
   font-weight: lighter;
   color: grey;
-  margin-left: 28%;
 }
 .registrerTittel:hover{
   cursor: default;
@@ -565,11 +564,18 @@ input[type="radio"]{
     margin-left: 70px;
   }
   .registrerTittel{
-    margin-left: 10%;
+    margin-left: 5%;
   }
   #registrerMedlem{
     margin: 30px;
     width: 400px;
+  }
+  #stottDonasjon{
+    max-width: 80%;
+    margin: auto;
+  }
+  #stottDonasjon input[type="submit"]{
+    margin-left: 40px;
   }
 }
 #registrerMedlem input[type="submit"]:hover{
