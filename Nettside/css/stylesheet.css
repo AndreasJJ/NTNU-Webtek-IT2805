@@ -582,8 +582,10 @@ footer .link{
 #stottDonasjon input{
   width: 200px;
   height: 50px;
+  text-align: left;
 }
 #stottDonasjon{
+  text-align: center;
   margin: auto;
   max-width: 80%;
 }
@@ -591,8 +593,8 @@ footer .link{
   font-size: 28px;
   font-weight: bold;
   color: black;
-  margin-left: 30%;
-  margin-top: 10px;
+  margin: 10px;
+  text-align: center;
   background-color: #e9a301;
 }
 #stottDonasjon input:checked + label{
@@ -604,13 +606,14 @@ input[type="radio"]{
 #stotte label{
   width: 250px;
   height: 70px;
+  display: inline-block;
   background-color: white;
   -webkit-appearance: button;
   -moz-appearance: button;
   -ms-appearance: button;
+  padding-top: 20px;
   vertical-align: middle;
   text-align: center;
-  padding-top: 20px;
   font-size: 170%;
   box-shadow: 2px 2px 1px grey;
   margin: 10px;
