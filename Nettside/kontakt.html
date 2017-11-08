@@ -22,13 +22,13 @@ PURPOSE: brukere på siden skal ha mulighet til å kontakte partiet
     <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
     <link rel="manifest" href="img/favicon/manifest.json">
     <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
-    
+
     <title>Kontakt oss</title>
 
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
@@ -37,7 +37,7 @@ PURPOSE: brukere på siden skal ha mulighet til å kontakte partiet
 </head>
 
 <body>
-        <header>
+    <header>
         <div class="menuContainer">
             <div class="menu noselect">
                 <div class="hamburgerButton" onclick="openSidebarMenu()">
@@ -74,47 +74,49 @@ PURPOSE: brukere på siden skal ha mulighet til å kontakte partiet
                     <li class="noselect sideNavLink"><span>Politikere</span></li>
                 </ul>
             </aside>
-            <div id="kontakt">
-                <h1>Kontakt oss:</h1>
-                <form method="post" action="http://olefredrik.altervista.org/send.php">
-                    <div id="send-melding">
-                        <div class="float-left">
-                            <div class="input-felt float-left">
-                                <label for="navn" class="float-left">Navn:</label><input id="navn" type="text" name="navn" class="float-right" />
+            <div id="mainContent" class="outercontainer">
+                <div id="kontakt">
+                    <h1>Kontakt oss:</h1>
+                    <form method="post" action="http://olefredrik.altervista.org/send.php">
+                        <div id="send-melding">
+                            <div class="float-left">
+                                <div class="input-felt float-left">
+                                    <label for="navn" class="float-left">Navn:</label><input id="navn" type="text" name="navn" class="float-right" />
+                                </div>
+                                <div class="input-felt float-left">
+                                    <label for="bedrift" class="float-left">Bedrift:</label><input id="bedrift" type="text" name="bedrift" class="float-right" />
+                                </div>
+                                <div class="input-felt float-left">
+                                    <label for="epost" class="float-left">Epost:</label><input id="epost" type="email" name="epost" class="float-right" />
+                                </div>
                             </div>
-                            <div class="input-felt float-left">
-                                <label for="bedrift" class="float-left">Bedrift:</label><input id="bedrift" type="text" name="bedrift" class="float-right" />
+                            <div class="float-right" id="meldingsboks">
+                                <label for="melding">Melding:</label>
+                                <textarea name="melding" id="melding"></textarea>
                             </div>
-                            <div class="input-felt float-left">
-                                <label for="epost" class="float-left">Epost:</label><input id="epost" type="email" name="epost" class="float-right" />
+                            <div class="clear-both">
+                                <input value="Send melding" type="submit">
                             </div>
                         </div>
-                        <div class="float-right" id="meldingsboks">
-                            <label for="melding">Melding:</label>
-                            <textarea name="melding" id="melding"></textarea>
-                        </div>
-                        <div class="clear-both">
-                            <input value="Send melding" type="submit">
-                        </div>
-                    </div>
-                </form>
-                <hr/>
-                <img src="img/logoGammel.PNG" alt="logo" class="float-left">
-                <table class="float-right">
-                    <tr>
-                        <td class="label">Email:</td>
-                        <td>kontakt@studentpartiet.no</td>
-                    </tr>
-                    <tr>
-                        <td class="label">Telefon:</td>
-                        <td>+47 75 54 55 55</td>
-                    </tr>
-                    <tr>
-                        <td class="label">Adresse:</td>
-                        <td>Høyskoleringen 7, 7491 Trondheim</td>
-                    </tr>
-                </table>
-                <div class="clear-both"></div>
+                    </form>
+                    <hr/>
+                    <img src="img/logoGammel.PNG" alt="logo" class="float-left">
+                    <table class="float-right">
+                        <tr>
+                            <td class="label">Email:</td>
+                            <td>kontakt@studentpartiet.no</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Telefon:</td>
+                            <td>+47 75 54 55 55</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Adresse:</td>
+                            <td>Høyskoleringen 7, 7491 Trondheim</td>
+                        </tr>
+                    </table>
+                    <div class="clear-both"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -123,8 +125,7 @@ PURPOSE: brukere på siden skal ha mulighet til å kontakte partiet
             <a href="kontakt.html" class="link">Kontakt oss</a>
             <a href="http://facebook.com/studentpartiet"><i class="fa fa-facebook"></i></a>
             <a href="http://twitter.com/studentpartiet"><i class="fa fa-twitter"></i></a>
-            <br>
-            &copy; Copyright 2016 -
+            <br> &copy; Copyright 2016 -
             <script>
                 document.write(new Date().getFullYear())
 
@@ -133,7 +134,6 @@ PURPOSE: brukere på siden skal ha mulighet til å kontakte partiet
         </p>
     </footer>
     <script src="js/navigation.js"></script>
-  </body>
+</body>
 
 </html>
-
