@@ -32,6 +32,7 @@ body {
 /* Header and navigation bar */
 header {
 	width: 100%;
+  max-width: 100%;
 	background-color: #e9a301;
 	box-shadow: 0px 0px 5px #e9a301;
 	font-family: 'Product Sans',Arial,sans-serif;
@@ -44,13 +45,16 @@ header {
     height: 100%;
     display: flex;
     width: 100%;
+    max-width: 100%;
 }
 
 .menu {
-    padding: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
     width: 100%;
     align-items: center;
     display: flex;
+    max-width: 100%;
 }
 
 .hamburgerButton {
@@ -62,17 +66,14 @@ header {
 .logo {
     padding-left: 10px;
     padding-right: 10px;
-    height: 100%
+    display: flex;
+    max-height: 100%;
 }
 
 .logo img {
-    height: 100%;
-}
-
-.logo h1 {
-    font-weight: normal;
-    padding: 0 0 0 0;
-    margin: 0 0 0 0;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
 }
 
 @media (max-width : 800px) {
@@ -483,6 +484,7 @@ footer .link{
   margin-left: auto;
   margin-right: auto;
   margin-top: 15px;
+  min-height: 500px;
 }
 #programSak{
   background-color: #f7f7f7;
@@ -491,9 +493,30 @@ footer .link{
   -moz-border-radius:15px;
   -webkit-border-radius:15px;
   border-radius:15px;
+  float: left;
+  min-height: 500px;
+}
+#programSaker{
+  width: 30%;
+  margin: 0px;
 }
 #programSaker ul{
   list-style-type: none;
+  float:none;
+  margin-right: 0;
+  width: inherit;
+  display: table;
+  table-layout: fixed;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+
+}
+#programNav{
+  margin-left: auto;
+  margin-right: auto;
 }
 #programSak li{
   width: 130px;
@@ -502,9 +525,33 @@ footer .link{
   text-align: center;
   margin:3px;
   padding-top: 5px;
+  margin-right: 0;
+  display: table-cell;
+  text-align: center;
+  list-style-type: none;
 }
 #programAnnetParti ul{
   list-style-type: none;
+  float:none;
+  margin-right: 0;
+  width: inherit;
+  display: table;
+  table-layout: fixed;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+}
+#programMening{
+  width: 30%;
+  float:left;
+  margin-right: 10%;
+
+}
+#programAnnetPartiMening{
+ width: 30%;
+ float:right;
 }
 
 /*  *************** END *************** */
