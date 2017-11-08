@@ -499,9 +499,10 @@ footer .link{
   border-radius:15px;
   float: left;
   min-height: 500px;
+  text-align: center;
 }
 #programSaker{
-  width: 30%;
+  width: 100%;
   margin: 0px;
 }
 #programSaker ul{
@@ -521,6 +522,7 @@ footer .link{
 #programNav{
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 #programSak li{
   width: 130px;
@@ -531,7 +533,7 @@ footer .link{
   padding-top: 14px ;
   padding-bottom: auto;
   margin-right: 0;
-  display: table-cell;
+  display: inline-table;
   text-align: center;
   list-style-type: none;
   font-size: 16px;
@@ -551,6 +553,7 @@ footer .link{
   -webkit-margin-start: 0;
   -webkit-margin-end: 0;
   -webkit-padding-start: 0;
+  width: 100%;
 }
 #programMening{
   width: 37%;
@@ -564,14 +567,13 @@ footer .link{
  float:right;
  margin-top: 15px;
 }
-#programNav{
-  margin-left: auto;
-  margin-right: auto;
-  width: 520px;
-}
 .valgtProgram{
   border: 10px solid red;
-
+}
+@media screen and (max-width: 790px) and (min-width:637px){
+    #programNav{
+        width: 70%;
+    }
 }
 /*  *************** END *************** */
 /* Til støtteside */
