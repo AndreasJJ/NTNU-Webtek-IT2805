@@ -680,13 +680,16 @@ input[type="radio"]{
 .timelineInner {
   max-width: 450px;
   display: inline-block;
-  margin: 5px;
 }
 
-@media min-width: 800px {
+@media (min-width: 800px) {
   .timelineInner {
-    max-width: 450px;
-    display: inline-block;
+    margin: 50px;
+  }
+}
+@media (max-width: 799px) {
+  .timelineInner {
+    margin: 7px;
   }
 }
 

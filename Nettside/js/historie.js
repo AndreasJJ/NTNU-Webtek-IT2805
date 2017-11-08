@@ -22,10 +22,16 @@ var student_history = [
 ];
 
 lastStates = [];
+
+var isMobile = window.innerWidth < 800;
+console.log("[mobileDetect]: " + isMobile);
 //Make 100% sure there DOM is populated, in case some browser is dumb. Not supported by IE8.
 document.addEventListener("DOMContentLoaded", function(event) { 
 	//Populate content
 	initialPopulate();
+	//Animations are disabled on mobile
+	if(isMobile)
+		return;
 	//Remember which timeline elements are gone, move those that are gone to their proper position
 	for(var i = 0; i < student_history.length; i++) {
 		element = document.getElementById("timeline"+i);
@@ -83,8 +89,10 @@ function scrollCallback(e) {
 		}
 	}
 }
-window.addEventListener('scroll', scrollCallback);
-window.addEventListener('touchmove', scrollCallback);
+if(!isMobile) {
+	window.addEventListener('scroll', scrollCallback);
+	window.addEventListener('touchmove', scrollCallback);
+}
 
 /*
 	Vanilla JS animation engine, because "we gotta use javascript"
