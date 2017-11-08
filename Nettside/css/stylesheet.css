@@ -710,4 +710,9 @@ input[type="radio"]{
   left: -50%;
   /*text-align: left;*/
 }
+
+.footerPusher {
+  width: 10px;
+  position: static;
+}
 /*  *************** END *************** */
