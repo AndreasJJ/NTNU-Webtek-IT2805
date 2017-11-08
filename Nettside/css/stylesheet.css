@@ -521,19 +521,24 @@ footer .link{
 #programSak li{
   width: 130px;
   height: 50px;
-  border: solid black 1px;
+  border: solid black 2px;
   text-align: center;
   margin:3px;
-  padding-top: 5px;
+  padding-top: 14px ;
+  padding-bottom: auto;
   margin-right: 0;
   display: table-cell;
   text-align: center;
   list-style-type: none;
+  font-size: 16px;
+  background-color: white;
+}
+#programSak li:hover{
+  background: #e9a301;
 }
 #programAnnetParti ul{
   list-style-type: none;
   float:none;
-  margin-right: 0;
   width: inherit;
   display: table;
   table-layout: fixed;
@@ -544,16 +549,26 @@ footer .link{
   -webkit-padding-start: 0;
 }
 #programMening{
-  width: 30%;
+  width: 37%;
   float:left;
-  margin-right: 10%;
-
+  margin-right: 13%;
+  margin-top: 15px;
 }
 #programAnnetPartiMening{
- width: 30%;
+ width: 37%;
+ margin-left: 13%;
  float:right;
+ margin-top: 15px;
 }
+#programNav{
+  margin-left: auto;
+  margin-right: auto;
+  width: 520px;
+}
+.valgtProgram{
+  border: 10px solid red;
 
+}
 /*  *************** END *************** */
 /* Til støtteside */
 #stotte {
