@@ -664,3 +664,50 @@ input[type="radio"]{
   background-color: grey;
 }
 /*  *************** END *************** */
+
+/* History/timeline */
+#timeline {
+    text-align: center;
+    /*position: static;*/
+    width: 100%;
+}
+
+.timelineElement {
+  position: absolute;
+  width: 50%;
+}
+
+.timelineInner {
+  max-width: 450px;
+  display: inline-block;
+  margin: 50px;
+}
+
+.timelineLeft {
+  text-align: right;
+  float: left;
+}
+
+.timelineRight {
+  text-align: left;
+  float: right;
+}
+
+#timelineDivider {
+  position: absolute;
+  left: calc( 50% - 2px);
+  width: 4px;
+  background-color: #444444;
+}
+
+.whatsnext {
+  position: absolute;
+  left: 50%;
+}
+
+.whatsnextInner {
+  position: relative;
+  left: -50%;
+  /*text-align: left;*/
+}
+/*  *************** END *************** */
