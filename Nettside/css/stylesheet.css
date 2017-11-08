@@ -480,6 +480,7 @@ footer .link{
 }
 /*  *************** END *************** */
 /* Til Programside */
+
 #programContent{
   width: 80%;
   margin-left: auto;
@@ -569,6 +570,21 @@ footer .link{
 .valgtProgram{
   border: 10px solid red;
 
+}
+@media screen and (max-width: 800px){
+  #programMening{
+    width: 100%;
+    float:left;
+    margin-top: 15px;
+
+  }
+  #programAnnetPartiMening{
+   width: 100%;
+   float:left;
+   margin-top: 15px;
+   margin-left: 0px;
+  }
+  /*Putte inn kode for listen her */
 }
 /*  *************** END *************** */
 /* Til støtteside */
