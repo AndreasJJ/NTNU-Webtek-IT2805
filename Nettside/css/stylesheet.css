@@ -680,7 +680,14 @@ input[type="radio"]{
 .timelineInner {
   max-width: 450px;
   display: inline-block;
-  margin: 50px;
+  margin: 5px;
+}
+
+@media min-width: 800px {
+  .timelineInner {
+    max-width: 450px;
+    display: inline-block;
+  }
 }
 
 .timelineLeft {
@@ -695,8 +702,8 @@ input[type="radio"]{
 
 #timelineDivider {
   position: absolute;
-  left: calc( 50% - 2px);
-  width: 4px;
+  left: calc( 50% - 1px);
+  width: 2px;
   background-color: #444444;
 }
 
@@ -715,4 +722,24 @@ input[type="radio"]{
   width: 10px;
   position: static;
 }
+/*  *************** END *************** */
+
+/* Sitemap */
+
+#sitemapContent {
+  width: 100%;
+  padding: 20px;
+}
+
+.sitemapContainer {
+  background-color: #f7f7f7;
+  padding: 30px 50px;
+  width: 900px;
+  -moz-border-radius:15px;
+  -webkit-border-radius:15px;
+  border-radius:15px;
+  min-height: 500px;
+  margin: auto;
+}
+
 /*  *************** END *************** */

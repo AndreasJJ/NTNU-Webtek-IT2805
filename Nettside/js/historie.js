@@ -64,13 +64,12 @@ function initialPopulate() {
 /*
 	This makes me feel dirty
 */
-
-window.addEventListener('scroll', function(e) {
-	//console.log("start");
+function scrollCallback(e) {
+	console.log("Scroll callback");
 	for(var i = 0; i < student_history.length; i++) {
 		element = document.getElementById("timeline"+i);
 		bb = element.getBoundingClientRect();
-		//console.log(bb.bottom);
+		console.log(bb.bottom);
 		if(bb.bottom>document.documentElement.clientHeight) {
 			if(!lastStates[i]) {
 				animationEngine.animateElement(element, "left", i%2==0?-100:150, "%", 300);
@@ -83,7 +82,9 @@ window.addEventListener('scroll', function(e) {
 			}
 		}
 	}
-});
+}
+window.addEventListener('scroll', scrollCallback);
+window.addEventListener('touchmove', scrollCallback);
 
 /*
 	Vanilla JS animation engine, because "we gotta use javascript"
@@ -186,6 +187,6 @@ animationEngine = function() {
 		console.log("Registered new animation");
 		updateCallbackFunc();
 	}
-
+	console.log("AnimationEngine 1.1 initialized");
 	return toReturn;
 }();
