@@ -1,9 +1,3 @@
-<!--
-FILE NAME: stotte.html
-WRITTEN BY: Olav Håberg Dimmen
-WHEN: Oktober 2017
-PURPOSE: Brukere på siden skal ha mulighet til å støtte studentpartiet og/eller registrere seg som medlem
--->
 <!DOCTYPE html>
 <html>
 
@@ -29,11 +23,10 @@ PURPOSE: Brukere på siden skal ha mulighet til å støtte studentpartiet og/ell
     <link rel="manifest" href="img/favicon/manifest.json">
     <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
 
-    <title>Støtte</title>
-
+    <title>Studentpartiet</title>
+    
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
     <script src="https://use.fontawesome.com/d376ee9696.js"></script>
-
 </head>
 
 <body>
@@ -68,32 +61,27 @@ PURPOSE: Brukere på siden skal ha mulighet til å støtte studentpartiet og/ell
                 <ul>
                     <li class="noselect sideNavLink"><span>Om oss</span></li>
                     <li class="noselect sideNavLink"><span>Program</span></li>
-                    <li class="noselect sideNavLink selected"><span>Støtt oss</span></li>
+                    <li class="noselect sideNavLink"><span>Støtt oss</span></li>
                     <li class="noselect sideNavLink"><span>Kontakt oss</span></li>
                     <li class="noselect sideNavLink"><span>Historie</span></li>
                     <li class="noselect sideNavLink"><span>Politikere</span></li>
                 </ul>
             </aside>
-            <section id="stotte">
-              <h1 class="registrerTittel">Støtt Studentpartiet!</h1>
-              <form id="stottDonasjon" action="https://www.paypal.com">
-                <input type="radio" id="stottOss1" value="50kr" name="radioButton" checked required><label for="stottOss1">50 kroner</label>
-                <input type="radio" id="stottOss2" value="100kr" name="radioButton"><label for="stottOss2">100 kroner</label><br>
-                <input type="radio" id="stottOss3" value="250kr" name="radioButton"><label for="stottOss3">250 kroner</label>
-                <input type="radio" id="stottOss4" value="500kr" name="radioButton"><label for="stottOss4">500 kroner</label><br><br>
-                <input type="submit" id="submitStotte"  value="Videre" formtarget="_blank"><br>
-              </form>
-              <br>
-              <hr>
-              <h1 class="registrerTittel">Bli medlem i dag!</h1>
-              <form id="registrerMedlem" action="index.html">
-                <input type="text" placeholder="Navn" required>
-                <input type="email"  placeholder="E-mail" required><br>
-                <input type="text" placeholder="Telefonnumer" required title="Skriv inn et gyldig telefonnummer" pattern="[0-9]{8}">
-                <input type="text" placeholder="Adresse" required><br>
-                <input type="submit" value="Registrer">
-              </form>
+            <section id="sitemapContent">
+              <div class="sitemapContainer">
+                  <h1>Nettside-oversikt</h1>
+                  <ul>
+                      <li><a href="index.html">Hovedside</a></li>
+                      <li><a href="historie.html">Historie</a></li>
+                      <li><a href="om.html">Om</a></li>
+                      <li><a href="politikere.html">Politikere</a></li>
+                      <li><a href="program.html">Politisk program</a></li>
+                      <li><a href="stotte.html">Støtt oss</a></li>
+                      <li><a href="kontakt.html">Kontakt</a></li>
+                  </ul>
+              </div>
             </section>
+
         </div>
     </div>
     <footer class="footer">
@@ -112,6 +100,7 @@ PURPOSE: Brukere på siden skal ha mulighet til å støtte studentpartiet og/ell
         </p>
     </footer>
     <script src="js/navigation.js"></script>
-  </body>
+    <script src="js/program.js"></script>
+</body>
 
-  </html>
+</html>

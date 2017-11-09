@@ -147,11 +147,10 @@ footer {
     text-align: center;
     display: table-row;
     overflow-wrap: break-word;
-    border-bottom: 1px solid black;
 }
 
-#sideNav ul li:last-child {
-    border-bottom: none;
+#sideNav ul li:hover {
+    background-color: #efa700;
 }
 
 #sideNav ul li span {
@@ -166,6 +165,10 @@ footer {
 }
 
 /*  *************** END *************** */
+
+.selected {
+  background-color: #ffb200;
+}
 
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
@@ -485,11 +488,13 @@ footer .link{
 }
 /*  *************** END *************** */
 /* Til Programside */
+
 #programContent{
   width: 80%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 15px;
+  margin-bottom: 15px;
   min-height: 500px;
 }
 #programSak{
@@ -577,6 +582,21 @@ footer .link{
         width: 70%;
     }
 }
+@media screen and (max-width: 800px){
+  #programMening{
+    width: 100%;
+    float:left;
+    margin-top: 15px;
+
+  }
+  #programAnnetPartiMening{
+   width: 100%;
+   float:left;
+   margin-top: 15px;
+   margin-left: 0px;
+  }
+  /*Putte inn kode for listen her */
+}
 /*  *************** END *************** */
 /* Til støtteside */
 #stotte {
@@ -586,8 +606,10 @@ footer .link{
 #stottDonasjon input{
   width: 200px;
   height: 50px;
+  text-align: left;
 }
 #stottDonasjon{
+  text-align: center;
   margin: auto;
   max-width: 80%;
 }
@@ -595,8 +617,8 @@ footer .link{
   font-size: 28px;
   font-weight: bold;
   color: black;
-  margin-left: 30%;
-  margin-top: 10px;
+  margin: 10px;
+  text-align: center;
   background-color: #e9a301;
 }
 #stottDonasjon input:checked + label{
@@ -608,13 +630,14 @@ input[type="radio"]{
 #stotte label{
   width: 250px;
   height: 70px;
+  display: inline-block;
   background-color: white;
   -webkit-appearance: button;
   -moz-appearance: button;
   -ms-appearance: button;
+  padding-top: 20px;
   vertical-align: middle;
   text-align: center;
-  padding-top: 20px;
   font-size: 170%;
   box-shadow: 2px 2px 1px grey;
   margin: 10px;
@@ -694,4 +717,86 @@ input[type="radio"]{
 #registrerMedlem input[type="submit"]:hover{
   background-color: grey;
 }
+/*  *************** END *************** */
+
+/* History/timeline */
+#timeline {
+    text-align: center;
+    /*position: static;*/
+    width: 100%;
+}
+
+.timelineElement {
+  position: absolute;
+  width: 50%;
+}
+
+.timelineInner {
+  max-width: 450px;
+  display: inline-block;
+}
+
+@media (min-width: 800px) {
+  .timelineInner {
+    margin: 50px;
+  }
+}
+@media (max-width: 799px) {
+  .timelineInner {
+    margin: 7px;
+  }
+}
+
+.timelineLeft {
+  text-align: right;
+  float: left;
+}
+
+.timelineRight {
+  text-align: left;
+  float: right;
+}
+
+#timelineDivider {
+  position: absolute;
+  left: calc( 50% - 1px);
+  width: 2px;
+  background-color: #444444;
+}
+
+.whatsnext {
+  position: absolute;
+  left: 50%;
+}
+
+.whatsnextInner {
+  position: relative;
+  left: -50%;
+  /*text-align: left;*/
+}
+
+.footerPusher {
+  width: 10px;
+  position: static;
+}
+/*  *************** END *************** */
+
+/* Sitemap */
+
+#sitemapContent {
+  width: 100%;
+  padding: 20px;
+}
+
+.sitemapContainer {
+  background-color: #f7f7f7;
+  padding: 30px 50px;
+  width: 900px;
+  -moz-border-radius:15px;
+  -webkit-border-radius:15px;
+  border-radius:15px;
+  min-height: 500px;
+  margin: auto;
+}
+
 /*  *************** END *************** */
