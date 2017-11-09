@@ -147,11 +147,10 @@ footer {
     text-align: center;
     display: table-row;
     overflow-wrap: break-word;
-    border-bottom: 1px solid black;
 }
 
-#sideNav ul li:last-child {
-    border-bottom: none;
+#sideNav ul li:hover {
+    background-color: #efa700;
 }
 
 #sideNav ul li span {
@@ -166,6 +165,10 @@ footer {
 }
 
 /*  *************** END *************** */
+
+.selected {
+  background-color: #ffb200;
+}
 
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
