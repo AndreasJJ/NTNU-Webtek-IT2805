@@ -393,7 +393,7 @@ footer .link{
 }
 /*  *************** END *************** */
 /* Til kontaktsside */
-#omMain{
+.omMain{
   border: 0px solid white;
   background-color: white;
   border-radius: 4px;
@@ -434,6 +434,8 @@ footer .link{
       margin: 5%;
     }
 }
+/*  *************** END *************** */
+/* Til politikerside */
 .profilPolitiker{
   border: 5px solid #e9a301;
   margin: 30px;
