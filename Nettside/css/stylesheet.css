@@ -713,3 +713,85 @@ input[type="radio"]{
   background-color: grey;
 }
 /*  *************** END *************** */
+
+/* History/timeline */
+#timeline {
+    text-align: center;
+    /*position: static;*/
+    width: 100%;
+}
+
+.timelineElement {
+  position: absolute;
+  width: 50%;
+}
+
+.timelineInner {
+  max-width: 450px;
+  display: inline-block;
+}
+
+@media (min-width: 800px) {
+  .timelineInner {
+    margin: 50px;
+  }
+}
+@media (max-width: 799px) {
+  .timelineInner {
+    margin: 7px;
+  }
+}
+
+.timelineLeft {
+  text-align: right;
+  float: left;
+}
+
+.timelineRight {
+  text-align: left;
+  float: right;
+}
+
+#timelineDivider {
+  position: absolute;
+  left: calc( 50% - 1px);
+  width: 2px;
+  background-color: #444444;
+}
+
+.whatsnext {
+  position: absolute;
+  left: 50%;
+}
+
+.whatsnextInner {
+  position: relative;
+  left: -50%;
+  /*text-align: left;*/
+}
+
+.footerPusher {
+  width: 10px;
+  position: static;
+}
+/*  *************** END *************** */
+
+/* Sitemap */
+
+#sitemapContent {
+  width: 100%;
+  padding: 20px;
+}
+
+.sitemapContainer {
+  background-color: #f7f7f7;
+  padding: 30px 50px;
+  width: 900px;
+  -moz-border-radius:15px;
+  -webkit-border-radius:15px;
+  border-radius:15px;
+  min-height: 500px;
+  margin: auto;
+}
+
+/*  *************** END *************** */

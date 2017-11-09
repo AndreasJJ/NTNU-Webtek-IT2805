@@ -1,9 +1,3 @@
-<!--
-FILE NAME: index.html
-WRITTEN BY: Kasper Maagerø Svendsen, Andreas Jensen Jonassen og Ole Fredrik Borgundvåg Berg
-WHEN: Oktober 2017
-PURPOSE: forsiden til partiet med lenker til de andre sidene
--->
 <!DOCTYPE html>
 <html>
 
@@ -30,7 +24,7 @@ PURPOSE: forsiden til partiet med lenker til de andre sidene
     <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
 
     <title>Studentpartiet</title>
-
+    
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
     <script src="https://use.fontawesome.com/d376ee9696.js"></script>
 </head>
@@ -73,59 +67,21 @@ PURPOSE: forsiden til partiet med lenker til de andre sidene
                     <li class="noselect sideNavLink"><span>Politikere</span></li>
                 </ul>
             </aside>
-            <section id="mainContent" class="mainContent">
-                <div id="frontpage">
-                    <div class="float-left" id="hovedinfo">
-                        <h1>Studentpartiet</h1>
-                        <p class="subline">Studentpartiet er et norsk nystartet parti, som har som hovedsak å ta vare på studenters interesser.</p>
-
-                    </div>
-
-                    <div class="float-right" id="bilde">
-                        <canvas id="bildegalleri" height="437" width="700" onmouseenter="vis_piler(true);overCanvas=true" onmouseleave="vis_piler(false);overCanvas=false" onclick="klikk(event)">Denne nettleseren støtter ikke canvas.</canvas>
-                    </div>
-                    <div id="hjertesaker" class="clear-both">
-                        <h2>
-                            Våre hjertesaker:
-                        </h2>
-                        <div id="sakbeholder">
-                            <div class="sak">
-                            <h3>Bedre økonomi</h3>
-                            <div class="ikon">
-                                <i class="fa fa-dollar"></i>
-                            </div>
-                            <p>Mange studenter har dårlig økonomi, noe som går ut over deres studiehverdag, derfor ønsker vi å gi dem flere penger.</p>
-                            </div>
-                            <div class="sak">
-                                <h3>Gratis mat</h3>
-                                <div class="ikon">
-                                    <i class="fa fa-cutlery"></i>
-                                </div>
-                                <p>Mange studenter har ikke lyst til å bruke tid og penger på mat, derfor ønsker vi å gi dem mat gratis.</p>
-                            </div>
-                            <div class="sak">
-                                <h3>Flere universiteter</h3>
-                                <div class="ikon">
-                                    <i class="fa fa-university"></i>
-                                </div>
-                                <p>Mange studenter har liker universiteter, derfor ønsker vi flere av dem!</p>
-                            </div>
-                        </div>
-                        
-                        <a id="read-more" href="program.html">Se hvor vi står på din sak!</a>
-                    </div>
-                </div>
+            <section id="sitemapContent">
+              <div class="sitemapContainer">
+                  <h1>Nettside-oversikt</h1>
+                  <ul>
+                      <li><a href="index.html">Hovedside</a></li>
+                      <li><a href="historie.html">Historie</a></li>
+                      <li><a href="om.html">Om</a></li>
+                      <li><a href="politikere.html">Politikere</a></li>
+                      <li><a href="program.html">Politisk program</a></li>
+                      <li><a href="stotte.html">Støtt oss</a></li>
+                      <li><a href="kontakt.html">Kontakt</a></li>
+                  </ul>
+              </div>
             </section>
-            <aside id="nyheter">
-                <h3>Demonstrasjon</h3>
-                <p>
-                    Vi skal ha demonstrasjon 17.12.2017, mot anti-intellektualisme.
-                </p>
-                <h3>Kommer til å gjøre brakvalg</h3>
-                <p>
-                    Kjent valgforsker og spådame mener at Studentpartiet kommer til å gjøre det bra ved neste valg.
-                </p>
-            </aside>
+
         </div>
     </div>
     <footer class="footer">
@@ -144,7 +100,7 @@ PURPOSE: forsiden til partiet med lenker til de andre sidene
         </p>
     </footer>
     <script src="js/navigation.js"></script>
-    <script src="js/galleri.js"></script>
+    <script src="js/program.js"></script>
 </body>
 
 </html>
