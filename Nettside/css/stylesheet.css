@@ -327,8 +327,17 @@ footer {
     }
     .sak{
         min-height: 355px;
+
     }
 }
+
+@media screen and (max-width: 800px){
+    .sak{
+      min-height: 200px;
+      width: 100%;
+    }
+}
+
 #kontakt img{
     width: 40%;
 }
