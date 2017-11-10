@@ -66,7 +66,7 @@ function openSidebarMenu() {
 		else if(window.getComputedStyle(sideNav, null).width != "0%" & sideNav.style.display != 'none') {
 			sideNav.style.display = 'none';
 			mainContent.style.display = 'block';
-			mainContent.style.width = '80%';
+			mainContent.style.width = '100%';
 		} else if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 			sideNav.style.display = 'block';
 			sideNav.style.width = '100%';
