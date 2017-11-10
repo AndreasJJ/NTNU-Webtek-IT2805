@@ -639,7 +639,12 @@ footer .link{
   background-color: #e9a301;
 }
 #stottDonasjon input:checked + label{
+  -webkit-appearance: none;
   background-color: #e9a301;
+  background: -webkit-linear-gradient(#e9a301, #ffc233);
+  background: -o-linear-gradient(#e9a301, #ffc233);
+  background: -moz-linear-gradient(#e9a301, #ffc233);
+  background: linear-gradient(#e9a301, #ffc233);
 }
 input[type="radio"]{
   display: none;
