@@ -674,6 +674,7 @@ input[type="radio"]{
   padding: 30px;
   max-width: 800px;
   margin: auto;
+  text-align: -webkit-center;
   box-shadow: 3px 3px 2px grey;
   margin-bottom: 8%;
   background-color: white;
@@ -699,7 +700,6 @@ input[type="radio"]{
 #registrerMedlem input[type="submit"]{
   background-color: #e9a301;
   border-radius: 4px;
-  margin-left: 250px;
   font-size: 200%;
   padding: 30px 12px 30px 12px;
   border: 1px solid grey;
@@ -707,7 +707,6 @@ input[type="radio"]{
 @media screen and (max-width: 950px){
   #registrerMedlem input[type="submit"]{
     width: auto;
-    margin-left: 0px;
   }
   #registrerMedlem input[type="text"],#registrerMedlem input[type="email"]{
     width: 70%;
