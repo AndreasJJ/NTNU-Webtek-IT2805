@@ -126,7 +126,7 @@ footer {
 /*  *************** END *************** */
 /* Sidebar Navigation */
 #sideNav {
-    width: 0%;
+    width: calc(100%/5);
     float: left;
     background-color: white;
     display: none;

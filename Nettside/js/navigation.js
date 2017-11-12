@@ -29,17 +29,18 @@ function linkNav(e) {
 
 function openSidebarMenu() {
 	var url = window.location.href;
+	var hostname = "http://" + window.location.hostname + "/";
 	var sideNav = document.getElementById('sideNav');
 	var newsBar = document.getElementById('nyheter');
-	if (url.endsWith("index.html")) {
+	if (url == hostname) {
 		var mainContent = document.getElementById('mainContent');
-		if(window.getComputedStyle(sideNav, null).width != "0%" & sideNav.style.display != 'none' & /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+		if(window.getComputedStyle(sideNav, null).display != 'none' & /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 			sideNav.style.display = 'none';
 			newsBar.style.display = 'none';
 			mainContent.style.display = 'block';
 			mainContent.style.width = '100%';
 		}
-		else if(window.getComputedStyle(sideNav, null).width != "0%" & sideNav.style.display != 'none') {
+		else if(window.getComputedStyle(sideNav, null).display != 'none') {
 			sideNav.style.display = 'none';
 			newsBar.style.display = 'block';
 			mainContent.style.display = 'block';
@@ -52,18 +53,17 @@ function openSidebarMenu() {
 		}
 		else {
 			sideNav.style.display = 'block';
-			sideNav.style.width = 'calc(100%/5)';
 			mainContent.style.width = 'calc((100%/5)*4)';
 			newsBar.style.display = 'none';
 		}
 	} else {
 		var mainContent = document.getElementById('mainContent');
-		if(window.getComputedStyle(sideNav, null).width != "0%" & sideNav.style.display != 'none' & /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+		if(window.getComputedStyle(sideNav, null).display != 'none' & /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 			sideNav.style.display = 'none';
 			mainContent.style.display = 'block';
 			mainContent.style.width = '100%';
 		}
-		else if(window.getComputedStyle(sideNav, null).width != "0%" & sideNav.style.display != 'none') {
+		else if(window.getComputedStyle(sideNav, null).display != 'none') {
 			sideNav.style.display = 'none';
 			mainContent.style.display = 'block';
 			mainContent.style.width = '100%';
@@ -74,7 +74,6 @@ function openSidebarMenu() {
 		}
 		else {
 			sideNav.style.display = 'block';
-			sideNav.style.width = 'calc(100%/5)';
 			mainContent.style.width = 'calc((100%/5)*4)';
 		}
 	}
