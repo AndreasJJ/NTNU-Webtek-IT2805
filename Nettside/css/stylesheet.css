@@ -829,6 +829,10 @@ input[type="radio"]{
   background-color: #444444;
 }
 
+.timelineSection {
+  width: 100%
+}
+
 .whatsnext {
   position: absolute;
   left: 50%;
