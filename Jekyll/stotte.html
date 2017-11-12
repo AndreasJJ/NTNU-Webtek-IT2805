@@ -1,0 +1,26 @@
+---
+layout: default
+title: Studentpartiet - Forside
+---
+<section id="mainContent" class="center">
+<div id="stotte">
+  <h1 class="registrerTittel">Støtt Studentpartiet!</h1>
+  <form id="stottDonasjon" action="https://www.paypal.com">
+    <input type="radio" id="stottOss1" value="50kr" name="radioButton" checked required><label for="stottOss1">50 kroner</label>
+    <input type="radio" id="stottOss2" value="100kr" name="radioButton"><label for="stottOss2">100 kroner</label><br>
+    <input type="radio" id="stottOss3" value="250kr" name="radioButton"><label for="stottOss3">250 kroner</label>
+    <input type="radio" id="stottOss4" value="500kr" name="radioButton"><label for="stottOss4">500 kroner</label><br><br>
+    <input type="submit" id="submitStotte"  value="Videre" formtarget="_blank"><br>
+  </form>
+  <br>
+  <hr>
+  <h1 class="registrerTittel">Bli medlem i dag!</h1>
+  <form id="registrerMedlem" action="index.html">
+    <input type="text" placeholder="Navn" required>
+    <input type="email"  placeholder="E-mail" required><br>
+    <input type="text" placeholder="Telefonnumer" required title="Skriv inn et gyldig telefonnummer" pattern="[0-9]{8}">
+    <input type="text" placeholder="Adresse" required><br>
+    <input type="submit" value="Registrer">
+  </form>
+</div>
+</section>

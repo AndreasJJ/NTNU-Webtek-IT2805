@@ -1,0 +1,820 @@
+/* Main wrapper and containers for the footer to stay at the bottom and genereally to make it work */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+}
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #e8e8e8;
+	font-family: helvetica;
+    position: relative;
+    height: 100%;
+}
+
+#wrapper {
+    display: flex;
+    min-height: Calc(100% - 125px);
+}
+
+#content {
+    display: flex;
+    width: 100%;
+}
+
+/*  *************** END *************** */
+/* Header and navigation bar */
+header {
+	width: 100%;
+  max-width: 100%;
+	background-color: #e9a301;
+	box-shadow: 0px 0px 5px #e9a301;
+	font-family: 'Product Sans',Arial,sans-serif;
+	height: 75px;
+	position: relative;
+
+}
+
+.menuContainer {
+    height: 100%;
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+}
+
+.menu {
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    max-width: 100%;
+}
+
+.hamburgerButton {
+    font-size: 1.5em;
+    color:white;
+}
+
+
+.logo {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    max-height: 100%;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+@media (max-width : 800px) {
+    #topnav {
+        display: none;
+    }
+}
+
+#topnav {
+    width: 100%;
+    padding: 10px;
+}
+
+#topnav ul {
+    width: inherit;
+    display: table;
+    table-layout: fixed;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+}
+
+#topnav ul li{
+    display: table-cell;
+    text-align: center;
+    list-style-type: none;
+    color: white;
+}
+
+#topnav ul li a{
+    text-decoration: none;
+    color: white;
+}
+/*  *************** END *************** */
+/* Footer */
+
+footer {
+	background-color: #e9a301;
+    width: 100%;
+    height: 50px;
+    clear: both;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+}
+/*  *************** END *************** */
+/* Sidebar Navigation */
+#sideNav {
+    width: 0%;
+    float: left;
+    background-color: white;
+    display: none;
+}
+
+#sideNav ul {
+    min-height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: table;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+#sideNav ul li {
+    list-style-type: none;
+    text-align: center;
+    display: table-row;
+    overflow-wrap: break-word;
+}
+
+#sideNav ul li:hover {
+    background-color: #efa700;
+}
+
+#sideNav ul li span {
+    display: table-cell;
+    vertical-align: middle;
+    cursor:default;
+}
+
+#sideNav ul li span a {
+    text-decoration: none;
+    color: black;
+}
+
+/*  *************** END *************** */
+
+.selected {
+  background-color: #ffb200;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari, Chrome, Opera */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+.mainContent {
+    padding: 20px;
+    width: 80%;
+    float: left;
+}
+
+#bilde img, #bilde canvas{
+	width: 100%;
+	float: left;
+}
+
+#bilde{
+	width: 45%;
+	float: right;
+	height: auto;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+#info {
+	width: 85%;
+	float:left;
+	margin-top: 30px;
+	margin-left: 3%;
+    padding-right: 3%;
+}
+
+#nyheter {
+    flex: 1;
+	width: 15%;
+	float: right;
+	padding-left: 2%;
+	padding-right: 2%;
+	border-left: 2px #e9a301 solid;
+	background-color: white;
+	overflow: inherit;
+	overflow-wrap: break-word;
+}
+
+#nyheter p {
+	border-bottom: solid #e9a301 2px;
+	padding-bottom: 10px;
+}
+
+#nyheter h3 {
+	margin-top: 15px;
+}
+/* Til kontaktside*/
+.label{
+    text-align: right;
+}
+#melding{
+    height: 50px;
+    width: 100%;
+    min-height: 100px;
+    min-width: 200px;
+    resize: vertical;
+    margin-bottom: 20px;
+}
+.boxsize{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#send-melding{
+    width: 100%;
+    margin: auto;
+}
+#send-melding td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#kontakt{
+    min-width: 200px;
+    max-width: 560px;
+    background-color: #f5f5f5;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+}
+.float-left{
+    float: left;
+    clear: left;
+}
+.float-right{
+    float: right;
+    clear: right;
+}
+.input-felt{
+    min-width: 250px;
+    padding-bottom: 10px;
+}
+.input-felt label{
+    width: 25%;
+    text-align: right;
+}
+.clear-both{
+    width: 100%;
+    clear: both;
+}
+.center{
+    margin: auto;
+}
+/*  *************** END *************** */
+/* Til forside*/
+#hovedinfo{
+    width: 400px;
+}
+.sak{
+    min-width: 150px;
+    width: 27%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #eeeeee;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    min-height: 280px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#sakbeholder{
+    text-align: center;
+}
+.ikon{
+    font-size: 50px;
+    color: #e9a301;
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 1121px){
+    #bilde, #hovedinfo{
+        width: 100%;
+        max-width: 10000px;
+    }
+    #bilde{
+        margin-bottom: 20px;
+    }
+    .sak{
+        min-height: 355px;
+
+    }
+}
+
+@media screen and (max-width: 800px){
+    .sak{
+      min-height: 200px;
+      width: 100%;
+    }
+}
+
+#kontakt img{
+    width: 40%;
+}
+#read-more{
+    width: 80%;
+    background-color: #f3f3f3;
+    border: 2px solid #cccccc;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    text-decoration: none;
+    color: #000000;
+}
+#read-more:hover{
+    background-color: #eeeeee;
+}
+.subline{
+    font-size: 17px;
+    padding: 20px 0;
+}
+#frontpage{
+    background-color: #f7f7f7;
+    width: 100%;
+    padding: 30px 50px;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    border-radius:15px;
+}
+.button-div{
+    text-decoration: none;
+}
+h1 {
+    font-size: 28px;
+}
+footer .link{
+    color: white;
+}
+#kontakt td:nth-child(2){
+    text-align: left;
+}
+@media screen and (max-width: 690px){
+    .float-left, .float-right{
+        margin: auto;
+        float: none;
+        clear: both;
+    }
+    #send-melding > .float-right{
+        width: 50%;
+    }
+
+    #nyheter{
+        display: none;
+    }
+    .mainContent{
+        width: 100%;
+    }
+    #container{
+        width: 100%;
+    }
+}
+/*  *************** END *************** */
+/* Til kontaktsside */
+.omMain{
+  border: 0px solid white;
+  background-color: white;
+  border-radius: 4px;
+  margin: auto;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  color: grey;
+  padding: 2%;
+  padding-top: 1%;
+  max-width: 70%;
+}
+.outercontainer{
+    margin: 0 auto;
+    padding: 30px;
+}
+#omTitle{
+  text-align: center;
+  font-size: 350%;
+  font-family: Times;
+}
+#omTekst{
+  position: relative;
+  border: 3px solid #313335;
+  overflow: hidden;
+  padding: 1%;
+}
+#omContent img{
+  float: left;
+  margin: 2%;
+  width: 400px;
+}
+@media screen and (max-width: 1200px){
+    #omContent img{
+      width: 300px;
+      float: none;
+      padding: 2%;
+    }
+    .omMain{
+      margin: 5%;
+      max-width: 100%;
+    }
+}
+/*  *************** END *************** */
+/* Til politikerside */
+.profilPolitiker{
+  border: 5px solid #e9a301;
+  margin: 30px;
+  display: inline-block;
+  padding: 5px;
+  text-align: center;
+  width: 230px;
+  border-radius: 15px;
+  background-color: white;
+  color: grey;
+  min-height: 450px;
+  }
+.profilPolitiker h2{
+  color: black;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  padding-bottom: 3px;
+  font-weight: lighter;
+  font-size: 190%;
+}
+.profilPolitiker p{
+  text-align: center;
+  min-height: 120px;
+}
+.profilPolitiker img{
+  width: 200px;
+  height: 270px;
+}
+.profilPolitiker a{
+  margin: 38px;
+  font-size: 140%;
+}
+
+#minPolitikerside{
+  max-width: 90%;
+  margin: auto;
+  text-align: center;
+}
+#minPolitikerside h1{
+  color: grey;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  text-align: center;
+  font-size: 300%;
+  font-weight: lighter;
+  font-style: italic;
+}
+/*  *************** END *************** */
+/* Til Programside */
+
+#programContent{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  min-height: 500px;
+}
+#programSak{
+  background-color: #f7f7f7;
+  width: 100%;
+  padding: 30px 50px;
+  -moz-border-radius:15px;
+  -webkit-border-radius:15px;
+  border-radius:15px;
+  float: left;
+  min-height: 500px;
+  text-align: center;
+}
+#programSaker{
+  width: 100%;
+  margin: 0px;
+}
+#programSaker ul{
+  list-style-type: none;
+  float:none;
+  margin-right: 0;
+  width: inherit;
+  display: table;
+  table-layout: fixed;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+
+}
+#programNav{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+#programSak li{
+  width: 130px;
+  height: 50px;
+  border: solid black 2px;
+  text-align: center;
+  margin:3px;
+  padding-top: 14px ;
+  margin-right: 0;
+  display: inline-table;
+  text-align: center;
+  list-style-type: none;
+  font-size: 16px;
+  background-color: white;
+}
+#programSak li:hover{
+  background: #e9a301;
+}
+#programAnnetParti ul{
+  list-style-type: none;
+  float:none;
+  width: inherit;
+  display: table;
+  table-layout: fixed;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+  width: 100%;
+}
+#programMening{
+  width: 37%;
+  float:left;
+  margin-right: 13%;
+  margin-top: 15px;
+  text-align: left;
+}
+#programAnnetPartiMening{
+ width: 37%;
+ margin-left: 13%;
+ float:right;
+ margin-top: 15px;
+ text-align: left;
+}
+.valgtProgram{
+  border: 10px solid red;
+}
+@media screen and (max-width: 790px) and (min-width:637px){
+    #programNav{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 800px){
+  #programMening{
+    width: 100%;
+    float:left;
+    margin-top: 15px;
+
+  }
+  #programContent{
+    width: 100%;
+
+  }
+  #programAnnetPartiMening{
+   width: 100%;
+   float:left;
+   margin-top: 15px;
+   margin-left: 0px;
+  }
+  /*Putte inn kode for listen her */
+}
+/*  *************** END *************** */
+/* Til støtteside */
+#stotte {
+    margin: auto;
+}
+
+#stottDonasjon input{
+  width: 200px;
+  height: 50px;
+  text-align: left;
+}
+#stottDonasjon{
+  text-align: center;
+  margin: auto;
+  max-width: 80%;
+}
+#stottDonasjon input[type="submit"]{
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+  margin: 10px;
+  text-align: center;
+  background-color: #e9a301;
+}
+#stottDonasjon input:checked + label{
+  -webkit-appearance: none;
+  background-color: #e9a301;
+  background: -webkit-linear-gradient(#e9a301, #ffc233);
+  background: -o-linear-gradient(#e9a301, #ffc233);
+  background: -moz-linear-gradient(#e9a301, #ffc233);
+  background: linear-gradient(#e9a301, #ffc233);
+}
+input[type="radio"]{
+  display: none;
+}
+#stotte label{
+  width: 250px;
+  height: 70px;
+  display: inline-block;
+  background-color: white;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  -ms-appearance: button;
+  padding-top: 20px;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 170%;
+  box-shadow: 2px 2px 1px grey;
+  margin: 10px;
+  color: grey;
+}
+.registrerTittel{
+  font-size: 300%;
+  font-weight: lighter;
+  color: grey;
+  text-align: center;
+}
+.registrerTittel:hover{
+  cursor: default;
+}
+#registrerMedlem{
+  border: 8px solid grey;
+  padding: 30px;
+  max-width: 800px;
+  margin: auto;
+  text-align: -webkit-center;
+  box-shadow: 3px 3px 2px grey;
+  margin-bottom: 8%;
+  background-color: white;
+
+}
+#registrerMedlem input{
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  background-color: lightgrey;
+  font-size: 150%;
+}
+/*Gjør placeholderene til kursiv, uten å påvirke brukerens egen input-stil*/
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-style: oblique;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  font-style: oblique;
+}
+:-moz-placeholder { /* Firefox 19+ */
+  font-style: oblique;
+}
+#registrerMedlem input[type="submit"]{
+  background-color: #e9a301;
+  border-radius: 4px;
+  font-size: 200%;
+  padding: 30px 12px 30px 12px;
+  border: 1px solid grey;
+}
+@media screen and (max-width: 950px){
+  #registrerMedlem input[type="submit"]{
+    width: auto;
+  }
+  #registrerMedlem input[type="text"],#registrerMedlem input[type="email"]{
+    width: 70%;
+    margin: 10px;
+  }
+  .registrerTittel{
+    margin-left: 5%;
+    font-size: 180%;
+  }
+  #registrerMedlem{
+    margin: 30px;
+    width: auto;
+    text-align: center;
+  }
+  #stottDonasjon{
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+  }
+  #stottDonasjon input[type="submit"]{
+    margin: 40px;
+  }
+}
+#registrerMedlem input[type="submit"]:hover{
+  background-color: grey;
+}
+/*  *************** END *************** */
+
+/* History/timeline */
+#timeline {
+    text-align: center;
+    /*position: static;*/
+    width: 100%;
+}
+
+.timelineElement {
+  position: absolute;
+  width: 50%;
+}
+
+.timelineInner {
+  max-width: 450px;
+  display: inline-block;
+}
+
+@media (min-width: 800px) {
+  .timelineInner {
+    margin: 50px;
+  }
+}
+@media (max-width: 799px) {
+  .timelineInner {
+    margin: 7px;
+  }
+}
+
+.timelineLeft {
+  text-align: right;
+  float: left;
+}
+
+.timelineRight {
+  text-align: left;
+  float: right;
+}
+
+#timelineDivider {
+  position: absolute;
+  left: calc( 50% - 1px);
+  width: 2px;
+  background-color: #444444;
+}
+
+.whatsnext {
+  position: absolute;
+  left: 50%;
+}
+
+.whatsnextInner {
+  position: relative;
+  left: -50%;
+  /*text-align: left;*/
+}
+
+.footerPusher {
+  width: 10px;
+  position: static;
+}
+/*  *************** END *************** */
+
+/* Sitemap */
+
+#sitemapContent {
+  width: 100%;
+  padding: 20px;
+}
+
+.sitemapContainer {
+  background-color: #f7f7f7;
+  padding: 30px 50px;
+  width: 900px;
+  -moz-border-radius:15px;
+  -webkit-border-radius:15px;
+  border-radius:15px;
+  min-height: 500px;
+  margin: auto;
+}
+
+/*  *************** END *************** */
