@@ -855,6 +855,7 @@ input[type="radio"]{
 
 .sitemapContent {
   width: 100%;
+  max-width: 900px;
   padding: 20px;
 }
 
