@@ -1,3 +1,8 @@
+window.onload=function(){
+utdanning();
+velgParti(1);
+}
+
 var studentpartiet = document.getElementById("programMening");
 var andrepartier = document.getElementById("programAnnetPartiMening");
 var valgtParti = 1;
