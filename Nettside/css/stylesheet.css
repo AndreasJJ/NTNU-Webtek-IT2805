@@ -60,8 +60,16 @@ header {
 .hamburgerButton {
     font-size: 1.5em;
     color:white;
+    padding: 10px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    padding-left: 14px;
+    padding-right: 14px;
 }
 
+.hamburgerButton:hover {
+    background-color: #cb8e01;
+}
 
 .logo {
     padding-left: 10px;
