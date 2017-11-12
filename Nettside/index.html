@@ -8,14 +8,14 @@ PURPOSE: forsiden til partiet med lenker til de andre sidene
 <html>
 
 <head>
-{% include head.html title="Forside" %}
+{% include_relative /Nettside/_includes/head.html title="Forside" %}
 </head>
 
 <body>
-    {% include header.html %}
+    {% include_relative /Nettside/_includes/header.html %}
     <div id="wrapper">
         <div id="content">
-            {% include sideNav.html %}
+            {% include_relative /Nettside/_includes/sideNav.html %}
             <section id="mainContent" class="mainContent">
                 <div id="frontpage">
                     <div class="float-left" id="hovedinfo">
@@ -71,7 +71,7 @@ PURPOSE: forsiden til partiet med lenker til de andre sidene
             </aside>
         </div>
     </div>
-    {% include footer.html %}
+    {% include_relative /Nettside/_includes/footer.html %}
     <script src="js/galleri.js"></script>
 </body>
 
