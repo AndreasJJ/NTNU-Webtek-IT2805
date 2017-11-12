@@ -172,12 +172,10 @@ footer {
 
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
+    -webkit-user-select: none; /* Safari, Chrome, Opera */
      -khtml-user-select: none; /* Konqueror HTML */
        -moz-user-select: none; /* Firefox */
         -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */
 }
 
 .mainContent {
@@ -549,7 +547,6 @@ footer .link{
   text-align: center;
   margin:3px;
   padding-top: 14px ;
-  padding-bottom: auto;
   margin-right: 0;
   display: inline-table;
   text-align: center;
