@@ -3,18 +3,26 @@ layout: default
 title: Studentpartiet - Forside
 js: <script src="js/galleri.js"></script>
 ---
+<!--
+FILE NAME: index.html
+WRITTEN BY: Kasper Maagerø Svendsen, Andreas Jensen Jonassen og Ole Fredrik Borgundvåg Berg
+WHEN: Oktober 2017
+PURPOSE: forsiden til partiet med lenker til de andre sidene
+-->
 <section id="mainContent" class="mainContent">
     <div id="frontpage">
         <div class="float-left" id="hovedinfo">
             <h1>Studentpartiet</h1>
             <p class="subline">Studentpartiet er et norsk nystartet parti, som har som hovedsak å ta vare på studenters interesser.</p>
-
+            <!-- kort info om partiet -->
         </div>
 
         <div class="float-right" id="bilde">
             <canvas id="bildegalleri" height="437" width="700" onmouseenter="vis_piler(true);overCanvas=true" onmouseleave="vis_piler(false);overCanvas=false" onclick="klikk(event)">Denne nettleseren støtter ikke canvas.</canvas>
+            <!-- bildegalleriet på siden -->
         </div>
         <div id="hjertesaker" class="clear-both">
+            <!-- her presenterer vi de viktigste politiske sakene -->
             <h2>
                 Våre hjertesaker:
             </h2>
@@ -41,12 +49,13 @@ js: <script src="js/galleri.js"></script>
                     <p>Mange studenter liker universiteter, derfor ønsker vi flere av dem!</p>
                 </div>
             </div>
-            
             <a id="read-more" href="program.html">Se hvor vi står på din sak!</a>
+            <!-- link som sender en videre til programmet om man har noe mer man lurer på -->
         </div>
     </div>
 </section>
 <aside id="nyheter">
+    <!-- korte nyheter om partiet og hva de driver med -->
     <h3>Demonstrasjon</h3>
     <p>
         Vi skal ha demonstrasjon 17.12.2017, mot anti-intellektualisme.
