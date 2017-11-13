@@ -177,6 +177,7 @@ footer {
     float: left;
     background-color: white;
     display: none;
+    z-index: 10;
 }
 
 #sideNav ul {
