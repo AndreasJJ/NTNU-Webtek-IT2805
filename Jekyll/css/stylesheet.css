@@ -855,7 +855,6 @@ input[type="radio"]{
 
 .sitemapContent {
   width: 100%;
-  max-width: 900px;
   padding: 20px;
 }
 
@@ -867,6 +866,7 @@ input[type="radio"]{
   border-radius:15px;
   min-height: 500px;
   margin: auto;
+  max-width: 900px;
 }
 
 /*  *************** END *************** */
