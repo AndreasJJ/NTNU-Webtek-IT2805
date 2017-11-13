@@ -1,13 +1,13 @@
-window.onload=function(){
+window.onload=function(){ //når man starter velger den høyre og utdanning av standar
 utdanning();
 velgParti(1);
 }
-
+//henter ut noen variabler og definerer valgt pari og valgtsak
 var studentpartiet = document.getElementById("programMening");
 var andrepartier = document.getElementById("programAnnetPartiMening");
 var valgtParti = 1;
 var valgtSak = "stotte";
-function stotte(){
+function stotte(){ //bytter ut studentpariets og det valgte partiets mening om bolig
   studentpartiet.innerHTML = "<h1>Studentpartiet</h1>Vi vil ha mulighet til å spare i BSU for å komme tidlig inn i boligmarkedet. Vi håper dette bil bidra til å gi oss mulighet til å eie bolig, også før fullført studie.";
   if(valgtParti==1){
     andrepartier.innerHTML = "<h1>Høyre</h1>Høyre vil styrke BSU-ordningen for å hjelpe unge inn på boligmarkedet. Det kan være vanskelig for unge å komme inn på boligmarkedet på grunn av høye boligpriser og økte egenkapitalkrav."+" Regjeringens utvidelse av BSU-ordningen hjelper flere unge inn i boligmarkedet.Sparing i forkant av kjøp er helt nødvendig for de fleste. "+"Høyre vil stimulere til sparing, og har derfor styrket BSU-ordningen betydelig."+" I statsbudsjettet for 2016 ble sparebeløpet økt ytterligere til 300.000 kroner. Med regjeringens endringer vil BSU-ordningen igjen bli en ordning som kan gi ungdom mulighet til å spare et stort nok beløp til å klare egenkapitalkravet fra bankene.";
@@ -24,7 +24,7 @@ function stotte(){
   document.getElementById("samferdsel").style.border = "solid 2px black";
   document.getElementById("arbeidogvelferd").style.border = "solid 2px black";
 }
-function utdanning(){
+function utdanning(){ //bytter ut studentpariets og det valgte partiets mening om utdanning
   studentpartiet.innerHTML = "<h1>Studentpartiet</h1>Vi vil ha støtte til alle studenter som tar utdanning. Vi vil også at støtten skal gies, også i sommerferien. Boligen krever leie, vi krever penger til leien.";
   if(valgtParti==1){
     andrepartier.innerHTML = "<h1>Høyre</h1>Et godt utdanningssystem er en forutsetning for arbeids- og  næringslivet. Vi vil øke investeringene i universiteter og høyskoler, og satse på kunnskap og forskning."+"Statsbudsjettet for 2017 inneholdt en betydelig satsing på kvalitet i høyere utdanning og forskning.  I perioden 2015-2017 har regjeringen fulgt opp Langtidsplanen for forskning og høyere utdanning med 2,2 mrd i økte bevilgninger (dette inkluderer Skattefunn). Vi vil styrke kvaliteten i høyere utdanning for å bygge kunnskapssamfunnet og sikre verdiskapingen.";
@@ -42,7 +42,7 @@ function utdanning(){
   document.getElementById("arbeidogvelferd").style.border = "solid 2px black";
 
 }
-function samferdsel(){
+function samferdsel(){ //bytter ut studentpariets og det valgte partiets mening om kollektiv transport
   studentpartiet.innerHTML = "<h1>Studentpartiet</h1>Vi i studentpartiet krever billig buss. Kollektiv prisene må senkes og det raskt. Nattbuss burde ikke koste noe ekstra. Det skal være billig å komme trygt hjem!";
   if(valgtParti==1){
     andrepartier.innerHTML = "<h1>Høyre</h1>"+"Et velfungerende kollektivnett er helt avgjørende for samfunnet."+" Befolkningsveksten i sentrale områder krever gode og bæredyktige løsninger. "+"Vi vil øke investeringene i samferdsel kraftig, og den største økningen vil komme innenfor kollektivtransport."+" Målet er å gjøre det så attraktivt at det de som kan la bilen stå gjør det."+"Siden regjeringsskiftet har vi økt støtten til kollektivtransport i byområdene. Det vil vi fortsette med. En særskilt innsats vil"+" bli rettet mot de største byområdene, hvor utfordringene og potensialet for å få flere til å bytte er størst.";
@@ -59,7 +59,7 @@ function samferdsel(){
   document.getElementById("samferdsel").style.border = "solid 2px #e9a301";
   document.getElementById("arbeidogvelferd").style.border = "solid 2px black";
 }
-function arbeid(){
+function arbeid(){ //bytter ut studentpariets og det valgte partiets mening om arbeid
   studentpartiet.innerHTML = "<h1>Studentpartiet</h1>Vi ønsker sikkert arbeid når vi er ferdig med studiet. Vi ønsker også mulighet til å få sommerjobb mellom semesterene slik at vi kan tjene opp litt penger. ";
   if(valgtParti==1){
     andrepartier.innerHTML = "<h1>Høyre</h1>Høyre ønsker et fleksibelt, familievennlig og trygt arbeidsliv med en sterk arbeidsmiljølov. Vi vil ha et arbeidsliv som har rom for flere enn i dag.";
@@ -77,7 +77,7 @@ function arbeid(){
   document.getElementById("arbeidogvelferd").style.border = "solid 2px #e9a301";
 
 }
-function velgParti(parti){
+function velgParti(parti){ //kjører når man bytter parti, velger forskjellig parti og ordner det valgte
   valgtParti = parti;
   if (valgtParti==1){
   document.getElementById("hoyre").style.border = "solid 2px #e9a301";
