@@ -58,7 +58,7 @@ function openSidebarMenu() {
 		}
 	} else {
 		var mainContent = document.getElementById('mainContent');
-		if(wwindow.getComputedStyle(sideNav, null).display != 'none' & /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+		if(window.getComputedStyle(sideNav, null).display != 'none' & /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 			sideNav.style.display = 'none';
 			mainContent.style.display = 'block';
 			mainContent.style.width = '100%';
