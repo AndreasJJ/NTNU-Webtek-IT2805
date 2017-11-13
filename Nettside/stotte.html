@@ -76,24 +76,24 @@ PURPOSE: Brukere på siden skal ha mulighet til å støtte studentpartiet og/ell
                 </ul>
             </aside>
             <section id="mainContent" class="center">
-            <div id="stotte">
+            <div id="stotte"> <!--Creating the first form, which will be a way of donating funds to the party.-->
               <h1 class="registrerTittel">Støtt Studentpartiet!</h1>
-              <form id="stottDonasjon" action="https://www.paypal.com">
-                <input type="radio" id="stottOss1" value="50kr" name="radioButton" checked required><label for="stottOss1">50 kroner</label>
+              <form id="stottDonasjon" action="https://www.paypal.com"> <!-- links to paypal, the idea is external payment-->
+                <input type="radio" id="stottOss1" value="50kr" name="radioButton" checked required><label for="stottOss1">50 kroner</label> <!--Using "invisible" radiobuttons to avoid javascript, since we're trying to stick to one script on this page -->
                 <input type="radio" id="stottOss2" value="100kr" name="radioButton"><label for="stottOss2">100 kroner</label><br>
                 <input type="radio" id="stottOss3" value="250kr" name="radioButton"><label for="stottOss3">250 kroner</label>
                 <input type="radio" id="stottOss4" value="500kr" name="radioButton"><label for="stottOss4">500 kroner</label><br><br>
-                <input type="submit" id="submitStotte"  value="Videre" formtarget="_blank"><br>
+                <input type="submit" id="submitStotte"  value="Videre" formtarget="_blank"><br> <!--Sends user to paypal on another page, so the user can still use studentpartiet's website -->
               </form>
               <br>
               <hr>
               <h1 class="registrerTittel">Bli medlem i dag!</h1>
-              <form id="registrerMedlem" action="index.html">
+              <form id="registrerMedlem" action="index.html"> <!--The second form covers detailed information needed to register the members. Every field is required, and gets checked for input flaws. -->
                 <input type="text" placeholder="Navn" required>
                 <input type="email"  placeholder="E-mail" required><br>
                 <input type="text" placeholder="Telefonnumer" required title="Skriv inn et gyldig telefonnummer" pattern="[0-9]{8}">
                 <input type="text" placeholder="Adresse" required><br>
-                <input type="submit" value="Registrer">
+                <input type="submit" value="Registrer"> <!--The button just links to the frontpage, as we covered all javascript on other elements of the website.  -->
               </form>
             </div>
             </section>
