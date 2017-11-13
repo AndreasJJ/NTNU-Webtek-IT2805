@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 const vGap = 200;
 function initialPopulate() {
-	var whatsnext = "<div class='whatsnext' style='top: " + (vGap*(student_history.length+1)+150) + "px'><div class='whatsnextInner' ><h1>Hva er å vente?</h1><ul><li>Mye spennende kverulering</li><li>100-års jubileum i 2020</li></ul></div></div>";
+	var whatsnext = "<div class='whatsnext' style='top: " + (vGap*(student_history.length+1)+150) + "px'><div class='whatsnextInner' ><h1>Hva er å vente?</h1><p>Mye spennende kverulering</p><p>100-års jubileum i 2020</p></div></div>";
 	var buildStr = "<h1>Vår historie</h1><p></p></div><div id='timelineDivider' style='height: " + (vGap*(student_history.length+1)) + "px'></div><div class='footerPusher' style='height: " + ((student_history.length+2)*vGap) + "px;'>" + whatsnext;
 	for(var i = 0; i < student_history.length; i++) {
 		buildStr += '<div id="timeline' + i + '" class="timelineElement ' + (i%2==0?"timelineLeft":"timelineRight") + '" style="top: ' + ((vGap*i)+100) + 'px; left: ' + (i%2==0?"0":"50") + '%"><div class="timelineInner">';
