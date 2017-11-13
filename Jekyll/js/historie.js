@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		element = document.getElementById("timeline"+i);
 		bb = element.getBoundingClientRect();
 		if(bb.bottom>document.documentElement.clientHeight) {
-			lastStates.push(true);
+			lastStates.push(true); //True means its gone
 			element.style.left = i%2==0?"-100%":"150%";
 		} else {
 			lastStates.push(false);
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 const vGap = 200;
 function initialPopulate() {
 	var whatsnext = "<div class='whatsnext' style='top: " + (vGap*(student_history.length+1)+150) + "px'><div class='whatsnextInner' ><h1>Hva er å vente?</h1><p>Mye spennende kverulering</p><p>100-års jubileum i 2020</p></div></div>";
-	var buildStr = "<h1>Vår historie</h1><p></p></div><div id='timelineDivider' style='height: " + (vGap*(student_history.length+1)) + "px'></div><div class='footerPusher' style='height: " + ((student_history.length+2)*vGap) + "px;'>" + whatsnext;
+	var buildStr = "<h1>Vår historie</h1><p></p></div><div id='timelineDivider' style='height: " + (vGap*(student_history.length+1)) + "px'></div><div class='footerPusher' style='height: " + ((student_history.length+2)*vGap) + "px;'></div>" + whatsnext;
 	for(var i = 0; i < student_history.length; i++) {
 		buildStr += '<div id="timeline' + i + '" class="timelineElement ' + (i%2==0?"timelineLeft":"timelineRight") + '" style="top: ' + ((vGap*i)+100) + 'px; left: ' + (i%2==0?"0":"50") + '%"><div class="timelineInner">';
 
@@ -78,12 +78,13 @@ function scrollCallback(e) {
 		console.log(bb.bottom);
 		if(bb.bottom>document.documentElement.clientHeight) {
 			if(!lastStates[i]) {
-				animationEngine.animateElement(element, "left", i%2==0?-100:150, "%", 300);
+				animationEngine.animateElement(element, "left", i%2==0?-100:150, "%", 300, function(element) {console.log("Done animating out");element.style["display"]="none"});
 				lastStates[i] = true;
 			}
 		} else {
 			if(lastStates[i]) {
-				animationEngine.animateElement(element, "left", i%2==0?0:50, "%", 300);
+				element.style["display"]="block";
+				animationEngine.animateElement(element, "left", i%2==0?0:50, "%", 300, function() {});
 				lastStates[i] = false;
 			}
 		}
@@ -103,7 +104,7 @@ animationEngine = function() {
 	var toReturn = {};
 
 	//Private objects
-	function AnimationTrack(element, cssProperty, goal, unit, time) {
+	function AnimationTrack(element, cssProperty, goal, unit, time, onComplete) {
 		this.element = element;
 		this.cssProperty = cssProperty;
 		this.goal = goal;
@@ -111,6 +112,7 @@ animationEngine = function() {
 		this.time = time;
 		this.startPos = element.style[cssProperty].replace(unit, "");
 		this.startTime = new Date().getTime();
+		this.onComplete = onComplete;
 	}
 
 	//Private fields
@@ -149,6 +151,8 @@ animationEngine = function() {
 			if(animationTracks[i].startTime+animationTracks[i].time<=d.getTime()) {
 				//console.log("Animation is done! Deleting it....");
 				animationTracks[i].element.style[animationTracks[i].cssProperty] = animationTracks[i].goal+animationTracks[i].unit;
+				//onComplete callback
+				animationTracks[i].onComplete(animationTracks[i].element);
 				animationTracks.splice(i, 1);
 				i--; //As we are removing an element, we need to decrease i so the next isn't skipped
 				updateCallbackFunc();
@@ -179,7 +183,7 @@ animationEngine = function() {
 		}
 	}
 
-	toReturn.animateElement = function(element, property, goal, unit, time) {
+	toReturn.animateElement = function(element, property, goal, unit, time, completeFunc) {
 		console.log("Creating new animation");
 		for(var i = 0; i < animationTracks.length; i++) {
 			if(animationTracks[i].element==element) {
@@ -191,7 +195,7 @@ animationEngine = function() {
 			}
 		}
 		//Completing this loop means there isn't an animation already. Cool
-		animationTracks.push(new AnimationTrack(element, property, goal, unit, time));
+		animationTracks.push(new AnimationTrack(element, property, goal, unit, time, completeFunc));
 		console.log("Registered new animation");
 		updateCallbackFunc();
 	}
