@@ -1,4 +1,4 @@
-# T2805 - Webteknologi
+# IT2805 - Webteknologi
 ## Gruppemedlemer
 * Kasper Maagerø Svendsen
 * Andreas Jensen Jonassen
@@ -11,5 +11,5 @@ Prosjektidé: nettside til partiet Studentpartiet
 Link: https://andreasjj.github.io/webtek/Nettside/index.html
 
 ## Viktig hosting informasjon
-Nettsiden bruker moduler/includes ved help av Jekyll og serveren er dermed nødt til å kjøre Jekyll for at den skall fungere som vanlig.
+Nettsiden bruker moduler/includes ved help av Jekyll og serveren er dermed nødt til å kjøre Jekyll for at den skal fungere som vanlig.
 For mer informasjon om jekyll se: https://jekyllrb.com/
