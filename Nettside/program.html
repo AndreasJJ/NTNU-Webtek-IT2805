@@ -22,7 +22,7 @@ PURPOSE: brukere på siden skal ha mulighet til å sammenligne partiet med andre
     <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
@@ -36,7 +36,7 @@ PURPOSE: brukere på siden skal ha mulighet til å sammenligne partiet med andre
 </head>
 
 <body onload="utdanning(),velgParti(1)">
-        <header>
+    <header>
         <div class="menuContainer">
             <div class="menu noselect">
                 <div class="hamburgerButton tooltip" onclick="openSidebarMenu()">
@@ -74,56 +74,56 @@ PURPOSE: brukere på siden skal ha mulighet til å sammenligne partiet med andre
                     <li class="noselect sideNavLink"><span>Politikere</span></li>
                 </ul>
             </aside>
-            <section id="mainContent">
+            <div id="mainContent">
                 <div id="programContent">
 
                     <div id="programSak">
-                      <div id="programNav">
-                      <div id="programSaker">
-                        <ul>
-                          <li id="utdanning" onclick="utdanning()">
-                            Utdanning
-                          </li>
-                          <li id="samferdsel" onclick="samferdsel()">
-                            Kollektivtransport
-                          </li>
-                          <li id="programStotte" onclick="stotte()">
-                            Bolig
-                          </li>
-                          <li id="arbeidogvelferd" onclick="arbeid()">
-                            Arbeidslivet
-                          </li>
-                        </ul>
-                    </div>
-                    <div id="programAnnetParti">
-                      <ul>
-                        <li onclick="velgParti(1)" id="hoyre">
-                          Høyre
-                        </li>
-                        <li onclick="velgParti(2)" id="sv">
-                          Arbeiderpartiet
-                        </li>
-                        <li onclick="velgParti(3)" id="ap">
-                          SV
-                        </li>
-                        <li onclick="velgParti(4)" id="frp">
-                          Fremskrittspartiet
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                    <div id="programMening">
+                        <div id="programNav">
+                            <div id="programSaker">
+                                <ul>
+                                    <li id="utdanning" onclick="utdanning()">
+                                        Utdanning
+                                    </li>
+                                    <li id="samferdsel" onclick="samferdsel()">
+                                        Kollektivtransport
+                                    </li>
+                                    <li id="programStotte" onclick="stotte()">
+                                        Bolig
+                                    </li>
+                                    <li id="arbeidogvelferd" onclick="arbeid()">
+                                        Arbeidslivet
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="programAnnetParti">
+                                <ul>
+                                    <li onclick="velgParti(1)" id="hoyre">
+                                        Høyre
+                                    </li>
+                                    <li onclick="velgParti(2)" id="sv">
+                                        Arbeiderpartiet
+                                    </li>
+                                    <li onclick="velgParti(3)" id="ap">
+                                        SV
+                                    </li>
+                                    <li onclick="velgParti(4)" id="frp">
+                                        Fremskrittspartiet
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="programMening">
 
-                    </div>
-                    <div id="programAnnetPartiMening">
+                        </div>
+                        <div id="programAnnetPartiMening">
 
+                        </div>
                     </div>
                 </div>
-            </section>
-
             </div>
 
         </div>
+
     </div>
     <footer class="footer">
         <p>
@@ -131,11 +131,9 @@ PURPOSE: brukere på siden skal ha mulighet til å sammenligne partiet med andre
             <a href="sitemap.html" class="link">Side-oversikt</a>
             <a href="http://facebook.com/studentpartiet"><i class="fa fa-facebook"></i></a>
             <a href="http://twitter.com/studentpartiet"><i class="fa fa-twitter"></i></a>
-            <br>
-            &copy; Copyright 2016 -
+            <br> &copy; Copyright 2016 -
             <script>
                 document.write(new Date().getFullYear())
-
             </script>, Studentpartiet.
             <br>
         </p>
